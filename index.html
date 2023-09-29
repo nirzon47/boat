@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Buy Earbuds, Headphones, Earphones at India's No.1 Earwear Brand: boAt
+		</title>
+		<!-- Tailwind Output CSS File -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- Slick CDN files -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
+	</head>
+	<body class="relative antialiased font-metropolis">
+		<!-- Announcement bar -->
+		<section
+			class="h-[38px] px-[20px] text-center flex items-center bg-announcement"
+		>
+			<a>
+				<p class="text-[11px] px-[22px] py-2 font-medium leading-none">
+					Getting you the power of good sound. <b>boAtxMarvel</b> is Live. Grab
+					Now!
+				</p>
+			</a>
+		</section>
+
+		<!-- Navbar -->
+		<nav class="sticky top-0 block w-full bg-white h-14">
+			<div class="flex justify-between w-full px-3 py-4 mx-auto">
+				<!-- Left Section -->
+				<section class="flex items-center gap-5">
+					<img
+						class="max-w-[18px] w-[18px] h-[14px]"
+						src="./assets/images/hamburger-icon.png"
+						alt="burger menu icon"
+					/>
+					<img
+						class="h-[25px] w-[60px] max-w-[60px]"
+						src="./assets/images/logo.svg"
+						height="62"
+						width="151"
+						alt="boat logo"
+					/>
+				</section>
+
+				<!-- Right Section -->
+				<section class="flex items-center gap-4">
+					<img
+						class="w-5 h-5"
+						src="./assets/images/search.webp"
+						alt="Search icon"
+					/>
+					<img src="./assets/images/bag.svg" alt="Shopping bag" />
+				</section>
+			</div>
+		</nav>
+
+		<!-- Carousel using Slick -->
+		<div class="main-carousel">
+			<div class="carousel">
+				<div><img src="./assets/images/c-1.webp" alt="Deadpool edition" /></div>
+				<div><img src="./assets/images/c-2.webp" alt="Lunar Mirage" /></div>
+				<div><img src="./assets/images/c-3.webp" alt="Lunar Prime" /></div>
+				<div><img src="./assets/images/c-4.webp" alt="Wave Pro" /></div>
+			</div>
+		</div>
+
+		<!-- Script for Slick carousel -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+		<script>
+			$(document).ready(function () {
+				$('.carousel').slick({
+					slidesToShow: 1,
+					autoplay: true,
+					adaptiveHeight: true,
+					arrows: true,
+					dots: true,
+				})
+			})
+		</script>
+	</body>
+</html>
