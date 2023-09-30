@@ -13,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
 		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 	</head>
-	<body class="relative antialiased font-metropolis">
+	<body class="relative overflow-auto antialiased font-metropolis">
 		<!-- Announcement bar -->
 		<section
 			class="h-[38px] px-[20px] text-center flex items-center bg-announcement"
@@ -26,8 +26,8 @@
 			</a>
 		</section>
 
-		<!-- Navbar -->
-		<nav class="sticky top-0 block w-full bg-white h-14">
+		<!-- Top Navbar -->
+		<nav class="sticky top-0 z-[10000] block w-full bg-white h-14">
 			<div class="flex justify-between w-full px-3 py-4 mx-auto">
 				<!-- Left Section -->
 				<section class="flex items-center gap-5">
@@ -58,12 +58,83 @@
 		</nav>
 
 		<!-- Carousel using Slick -->
-		<div class="main-carousel">
+		<div class="mb-[25px]">
 			<div class="carousel">
-				<div><img src="./assets/images/c-1.webp" alt="Deadpool edition" /></div>
-				<div><img src="./assets/images/c-2.webp" alt="Lunar Mirage" /></div>
-				<div><img src="./assets/images/c-3.webp" alt="Lunar Prime" /></div>
-				<div><img src="./assets/images/c-4.webp" alt="Wave Pro" /></div>
+				<div>
+					<img src="./assets/images/c-1-mobile.webp" alt="Lunar Comet" />
+				</div>
+				<div>
+					<img src="./assets/images/c-2-mobile.webp" alt="Deadpool edition" />
+				</div>
+				<div>
+					<img src="./assets/images/c-3-mobile.webp" alt="Lunar Mirage" />
+				</div>
+				<div>
+					<img src="./assets/images/c-4-mobile.webp" alt="Lunar Prime" />
+				</div>
+				<div><img src="./assets/images/c-5-mobile.webp" alt="Wave Pro" /></div>
+			</div>
+		</div>
+
+		<div class="w-screen h-screen"></div>
+		<div class="w-screen h-screen"></div>
+		<div class="w-screen h-screen"></div>
+
+		<!-- Bottom Navbar for mobile -->
+		<div
+			class="w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black"
+		>
+			<div class="flex justify-evenly">
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
+					<span
+						class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold"
+						>Home
+						<span class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"></span>
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Deals
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img
+						class="h-7 w-7"
+						src="./assets/images/categories.svg"
+						alt="categories"
+					/>
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Categories
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Login
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Chat
+					</span>
+				</div>
 			</div>
 		</div>
 
