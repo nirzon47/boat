@@ -1,156 +1,257 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>
-			Buy Earbuds, Headphones, Earphones at India's No.1 Earwear Brand: boAt
-		</title>
-		<!-- Tailwind Output CSS File -->
-		<link rel="stylesheet" href="style.css" />
 
-		<!-- Slick CSS -->
-		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-	</head>
-	<body class="relative overflow-auto antialiased font-metropolis">
-		<!-- Announcement bar -->
-		<section
-			class="h-[38px] px-[20px] text-center flex items-center bg-announcement"
-		>
-			<a>
-				<p class="text-[11px] px-[22px] py-2 font-medium leading-none">
-					Getting you the power of good sound. <b>boAtxMarvel</b> is Live. Grab
-					Now!
-				</p>
-			</a>
-		</section>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		Buy Earbuds, Headphones, Earphones at India's No.1 Earwear Brand: boAt
+	</title>
+	<!-- Tailwind Output CSS File -->
+	<!-- <link rel="stylesheet" href="style.css" /> -->
+	<link href="/dist/output.css" rel="stylesheet">
 
-		<!-- Top Navbar -->
-		<nav class="sticky top-0 z-[10000] block w-full bg-white h-14">
-			<div class="flex justify-between w-full px-3 py-4 mx-auto">
-				<!-- Left Section -->
-				<section class="flex items-center gap-5">
-					<img
-						class="max-w-[18px] w-[18px] h-[14px]"
-						src="./assets/images/hamburger-icon.png"
-						alt="burger menu icon"
-					/>
-					<img
-						class="h-[25px] w-[60px] max-w-[60px]"
-						src="./assets/images/logo.svg"
-						height="62"
-						width="151"
-						alt="boat logo"
-					/>
-				</section>
+	<!-- ----Fontawesome icons kit----- -->
+    <script src="https://kit.fontawesome.com/6604ef9bb8.js" crossorigin="anonymous"></script>
 
-				<!-- Right Section -->
-				<section class="flex items-center gap-4">
-					<img
-						class="w-5 h-5"
-						src="./assets/images/search.webp"
-						alt="Search icon"
-					/>
-					<img src="./assets/images/bag.svg" alt="Shopping bag" />
-				</section>
+	<!-- Slick CSS -->
+	<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+	<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+	<!-- ----Carousel By Saiful----- -->
+	<link rel="stylesheet" href="/components/carousel.css">
+</head>
+
+<body class="antialiased font-metropolis">
+	<!-- ---Top Announcement--- -->
+	<p class="announcement text-center text-xs py-2 bg-[#EFF4F7] font-normal">Getting you the power of good sound. <span
+			class="font-bold">boAtxMarvel</span> is Live. Grab Now!</p>
+	<!-- --------Header section Starts form here -------  -->
+	<header class="nav-section sticky top-0 !bg-white z-40">
+		<div class=" mx-auto">
+			<nav class="px-4 flex items-center justify-between py-4  ">
+				<!-- --logo side--- -->
+				<div class="left-side flex items-center md:grow xl:grow-0 xl:w-6/12 md:justify-between">
+					<div class="menu-bar text-xl mr-6 font-light lg:hidden">
+						<a href="">
+							<i class="fa-solid fa-bars"></i>
+						</a>
+
+					</div>
+					<div class="logo w-16 md:w-24">
+						<a href="">
+							<img src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
+								alt="logo" srcset="">
+						</a>
+
+					</div>
+					<!-- ---- Navigation links side for large or above screens---- -->
+					<div class="nav-items gap-6 hidden lg:flex">
+						<div class="item text-base hover:font-bold ">
+							<a href="#" class="flex items-center custom-hover-nv">
+								<span class="mr-1.5">Category </span>
+								<div class="icon h-full">
+									<svg focusable="false" width="7" height="10" class="rotate-90 my-[0.1rem]"
+										viewBox="0 0 7 10">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor">
+										</path>
+									</svg>
+								</div>
+							</a>
+
+						</div>
+						<div class="item text-base hover:font-bold">
+							<a href="#" class="">Daily Deals</a>
+						</div>
+						<div class="item text-base hover:font-bold">
+							<a href="#" class="">Gift with boAt</a>
+						</div>
+						<div class="item text-base hover:font-bold">
+							<a href="#" class="">Bulk Orders</a>
+						</div>
+
+						<div class="item text-base hover:font-bold">
+							<a href="#" class="flex items-center custom-hover-nv">
+								<span class="mr-1.5">More</span>
+								<div class="icon h-full">
+									<svg focusable="false" width="7" height="10" class="rotate-90 my-[0.1rem] "
+										viewBox="0 0 7 10">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor">
+										</path>
+									</svg>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- ---Right icons side --  -->
+				<div class="right-side flex items-center gap-3 md:grow md:justify-end">
+					<!-- -------- Search bar for large and above screen-------- -->
+					<div class="search-bar w-80  hidden lg:flex ">
+						<div class="wrapper flex bg-[#EFF4F7] rounded-3xl px-4 w-full relative">
+							<span class=" ">
+								<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search w-6"
+									width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50"
+									fill="none" stroke-linecap="round" stroke-linejoin="round">
+									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+									<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+									<path d="M21 21l-6 -6" />
+								</svg>
+							</span>
+							<input
+								class="text-base b-0 outline-none bg-[#EFF4F7] text-black rounded-r-3xl px-2 grow w-full placeholder:text-black"
+								type="text" placeholder="Search Speakers">
+							<!-- <span class="absolute text-base top-2 left-11">Search <b>Speakers</b></span> -->
+						</div>
+					</div>
+					<!-- ------search icon---- -->
+					<a href="#" class=" md:hidden">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search w-6"
+							width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+							<path d="M21 21l-6 -6" />
+						</svg>
+					</a>
+					<!-- ------ User icon----- -->
+					<a href="#" class="w-6 hidden md:flex">
+						<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989"
+							alt="" srcset="">
+					</a>
+					<!-- -----shopping bag icon----  -->
+					<a href="#" class="">
+						<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-bag w-7"
+							width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+							stroke-linecap="round" stroke-linejoin="round">
+							<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+							<path
+								d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
+							<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
+						</svg>
+					</a>
+
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- --------Header section Ends here -------  -->
+
+	<!-- I am adding my own carousel if you like you can use it or use your own -->
+
+	<!-- ------ Carousel Starts from here ---------- by saiful -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Lunar_Comet_WEB_1440x.jpg?v=1696054071">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Deadpool_Web_1_1440x.jpg?v=1695626645">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Mirage_Desktop_1_1440x.png?v=1695735607">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Lunar_Prime_Desktop_1440x.png?v=1695881409">
+        </div>
+        <div class="mySlides fade">
+            <img src="https://www.boat-lifestyle.com/cdn/shop/files/Wave-Pro_2499_1440x.jpg?v=1695391461">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The dots/circles -->
+        <div class="dots-wrapper">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <!-- ------ Carousel Ends here ----------by saiful --> 
+
+	<!-- Carousel using Slick -->
+	<!-- <div class="mb-[25px]">
+		<div class="carousel">
+			<div>
+				<img src="./assets/images/c-1-mobile.webp" alt="Lunar Comet" />
 			</div>
-		</nav>
+			<div>
+				<img src="./assets/images/c-2-mobile.webp" alt="Deadpool edition" />
+			</div>
+			<div>
+				<img src="./assets/images/c-3-mobile.webp" alt="Lunar Mirage" />
+			</div>
+			<div>
+				<img src="./assets/images/c-4-mobile.webp" alt="Lunar Prime" />
+			</div>
+			<div><img src="./assets/images/c-5-mobile.webp" alt="Wave Pro" /></div>
+		</div>
+	</div>
 
-		<!-- Carousel using Slick -->
-		<div class="mb-[25px]">
-			<div class="carousel">
-				<div>
-					<img src="./assets/images/c-1-mobile.webp" alt="Lunar Comet" />
-				</div>
-				<div>
-					<img src="./assets/images/c-2-mobile.webp" alt="Deadpool edition" />
-				</div>
-				<div>
-					<img src="./assets/images/c-3-mobile.webp" alt="Lunar Mirage" />
-				</div>
-				<div>
-					<img src="./assets/images/c-4-mobile.webp" alt="Lunar Prime" />
-				</div>
-				<div><img src="./assets/images/c-5-mobile.webp" alt="Wave Pro" /></div>
+	<div class="w-screen h-screen"></div>
+	<div class="w-screen h-screen"></div>
+	<div class="w-screen h-screen"></div> -->
+
+	<!-- Bottom Navbar for mobile -->
+	<div class="w-full p-[10px] md:hidden bg-white shadow tracking-[-0.4px] text-bottom-nav-black">
+		<div class="flex justify-evenly">
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
+				<span class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold">Home
+					<span class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"></span>
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Deals
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assets/images/categories.svg" alt="categories" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Categories
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Login
+				</span>
+			</div>
+			<div class="flex flex-col items-center justify-between w-[59px] h-[47px]">
+				<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
+				<span class="text-[10px] font-medium flex flex-col items-center justify-center mt-1">Chat
+				</span>
 			</div>
 		</div>
+	</div>
 
-		<div class="w-screen h-screen"></div>
-		<div class="w-screen h-screen"></div>
-		<div class="w-screen h-screen"></div>
-
-		<!-- Bottom Navbar for mobile -->
-		<div
-			class="w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black"
-		>
-			<div class="flex justify-evenly">
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
-					<span
-						class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold"
-						>Home
-						<span class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"></span>
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Deals
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img
-						class="h-7 w-7"
-						src="./assets/images/categories.svg"
-						alt="categories"
-					/>
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Categories
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Login
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Chat
-					</span>
-				</div>
-			</div>
-		</div>
-
-		<!-- Script for Slick carousel -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-		<script type="text/javascript" src="./slick/slick.min.js"></script>
-		<script>
-			$(document).ready(function () {
-				$('.carousel').slick({
-					slidesToShow: 1,
-					autoplay: true,
-					adaptiveHeight: true,
-					arrows: true,
-					dots: true,
-				})
+	<!-- Script for Slick carousel -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script type="text/javascript" src="./slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.carousel').slick({
+				slidesToShow: 1,
+				autoplay: true,
+				adaptiveHeight: true,
+				arrows: true,
+				dots: true,
 			})
-		</script>
-	</body>
+		})
+	</script>
+
+	<!-- --- Script for Carousel by saiful---  -->
+	<script src="/components/carousel.js"></script>
+</body>
+
 </html>
