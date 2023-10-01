@@ -12,8 +12,21 @@
 		<!-- Slick CSS -->
 		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
 		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+		<!-- Custom CSS -->
+		<style>
+			.scrollbar-hide::-webkit-scrollbar {
+				display: none;
+			}
+
+			/* For IE, Edge and Firefox */
+			.scrollbar-hide {
+				-ms-overflow-style: none; /* IE and Edge */
+				scrollbar-width: none; /* Firefox */
+			}
+		</style>
 	</head>
-	<body class="relative overflow-auto antialiased font-metropolis">
+	<body class="relative w-screen antialiased font-metropolis">
 		<!-- Announcement bar -->
 		<section
 			class="h-[38px] px-[20px] text-center flex items-center bg-announcement"
@@ -27,7 +40,7 @@
 		</section>
 
 		<!-- Top Navbar -->
-		<nav class="sticky top-0 z-[10000] block w-full bg-white h-14">
+		<nav class="sticky top-0 z-50 block w-screen bg-white">
 			<div class="flex justify-between w-full px-3 py-4 mx-auto">
 				<!-- Left Section -->
 				<section class="flex items-center gap-5">
@@ -58,7 +71,7 @@
 		</nav>
 
 		<!-- Carousel using Slick -->
-		<div class="mb-[25px]">
+		<div class="mb-[25px] z-10">
 			<div class="carousel">
 				<div>
 					<img src="./assets/images/c-1-mobile.webp" alt="Lunar Comet" />
@@ -72,13 +85,174 @@
 				<div>
 					<img src="./assets/images/c-4-mobile.webp" alt="Lunar Prime" />
 				</div>
-				<div><img src="./assets/images/c-5-mobile.webp" alt="Wave Pro" /></div>
+				<div>
+					<img src="./assets/images/c-5-mobile.webp" alt="Wave Pro" />
+				</div>
 			</div>
 		</div>
 
-		<div class="w-screen h-screen"></div>
-		<div class="w-screen h-screen"></div>
-		<div class="w-screen h-screen"></div>
+		<!-- Body -->
+		<div class="px-4">
+			<!-- Categories -->
+			<div
+				class="flex items-center justify-center py-1 overflow-hidden category:hidden mb-[25px]"
+			>
+				<div
+					class="flex justify-between overflow-x-scroll gap-x-5 scrollbar-hide"
+				>
+					<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+						<div class="h-[60px] w-[60px]">
+							<img
+								class="p-[3px] border-2 rounded-full border-boat-red"
+								src="./assets/images/category-1.webp"
+								alt="Best Sellers"
+							/>
+						</div>
+						<div
+							class="font-bold text-[10px] text-center w-3/4 h-[30px] leading-none"
+						>
+							Best Sellers
+						</div>
+					</div>
+					<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+						<div class="h-[60px] w-[60px]">
+							<img
+								class="p-[3px] border-2 rounded-full border-boat-red"
+								src="./assets/images/category-2.webp"
+								alt="New Launches"
+							/>
+						</div>
+						<div
+							class="font-bold text-[10px] text-center h-[30px] leading-none"
+						>
+							New Launches
+						</div>
+					</div>
+					<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+						<div class="h-[60px] w-[60px]">
+							<img
+								class="p-[3px] border-2 rounded-full border-boat-red"
+								src="./assets/images/category-3.jpg"
+								alt="Limited Edition"
+							/>
+						</div>
+						<div
+							class="font-bold text-[10px] text-center h-[30px] leading-none"
+						>
+							Limited Edition
+						</div>
+					</div>
+					<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+						<div class="h-[60px] w-[60px]">
+							<img
+								class="p-[3px] border-2 rounded-full border-boat-red"
+								src="./assets/images/category-4.webp"
+								alt="boAt Smartwatches"
+							/>
+						</div>
+						<div
+							class="font-bold text-[10px] text-center h-[30px] leading-none"
+						>
+							boAt Smartwatches
+						</div>
+					</div>
+					<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+						<div class="h-[60px] w-[60px]">
+							<img
+								class="p-[3px] border-2 rounded-full border-boat-red"
+								src="./assets/images/category-5.webp"
+								alt="boAt Airdopes"
+							/>
+						</div>
+						<div
+							class="font-bold text-[10px] text-center h-[30px] leading-none"
+						>
+							boAt Airdopes
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Explore Bestsellers -->
+			<div>
+				<h3 class="mb-3 text-2xl">
+					Explore
+					<span class="font-bold"
+						>Bestselle<span class="border-b-2 border-boat-red">rs</span></span
+					>
+				</h3>
+				<div
+					class="flex items-center justify-center py-1 overflow-hidden mb-[25px]"
+				>
+					<div
+						class="flex justify-between overflow-x-scroll gap-x-5 scrollbar-hide"
+					>
+						<div>
+							<video
+								class="w-40 h-40 rounded-[10px] max-w-none"
+								src="./assets/videos/bestseller-1.mp4"
+								preload="none"
+								loop="true"
+								autoplay="true"
+								playsinline="true"
+								muted="true"
+							></video>
+							<p class="text-xs font-medium text-center">Smartwatches</p>
+						</div>
+						<div>
+							<video
+								class="w-40 h-40 rounded-[10px] max-w-none"
+								src="./assets/videos/bestseller-2.mp4"
+								preload="none"
+								loop="true"
+								autoplay="true"
+								playsinline="true"
+								muted="true"
+							></video>
+							<p class="text-xs font-medium text-center">Wireless Earbuds</p>
+						</div>
+						<div>
+							<video
+								class="w-40 h-40 rounded-[10px] max-w-none"
+								src="./assets/videos/bestseller-3.mp4"
+								preload="none"
+								loop="true"
+								autoplay="true"
+								playsinline="true"
+								muted="true"
+							></video>
+							<p class="text-xs font-medium text-center">Neckbands</p>
+						</div>
+						<div>
+							<video
+								class="w-40 h-40 rounded-[10px] max-w-none"
+								src="./assets/videos/bestseller-4.mp4"
+								preload="none"
+								loop="true"
+								autoplay="true"
+								playsinline="true"
+								muted="true"
+							></video>
+							<p class="text-xs font-medium text-center">Headphones</p>
+						</div>
+						<div>
+							<video
+								class="w-40 h-40 rounded-[10px] max-w-none"
+								src="./assets/videos/bestseller-5.mp4"
+								preload="none"
+								loop="true"
+								autoplay="true"
+								playsinline="true"
+								muted="true"
+							></video>
+							<p class="text-xs font-medium text-center">Wireless Speakers</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--  -->
+		</div>
 
 		<!-- Bottom Navbar for mobile -->
 		<div
@@ -101,7 +275,7 @@
 					<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
 					<span
 						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						> <a href="./deals.html">Deals</a>
+						>Deals
 					</span>
 				</div>
 				<div
