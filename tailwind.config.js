@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+	important: true,
 	content: ['*.html'],
 	theme: {
 		extend: {
@@ -21,6 +22,21 @@ module.exports = {
 			},
 			lineHeight: {
 				none: '1',
+			},
+			screens: {
+				category: '500px',
+				'header-smaller-tablet': '741px',
+				lg: '1000px',
+				xl: '1200px',
+			},
+			backgroundImage: {
+				'search-in-header': "url('./assets/images/search.webp')",
+			},
+			backgroundSize: {
+				'search-in-header': '18px',
+			},
+			backgroundPosition: {
+				'search-in-header': '12px center',
 			},
 		},
 	},
