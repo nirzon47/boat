@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boAt blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+		<!-- Custom CSS -->
+		<style>
+			.scrollbar-hide::-webkit-scrollbar {
+				display: none;
+			}
+
+			/* For IE, Edge and Firefox */
+			.scrollbar-hide {
+				-ms-overflow-style: none; /* IE and Edge */
+				scrollbar-width: none; /* Firefox */
+			}
+		</style>
+</head>
+<body>
+    <nav></nav>
+    <section class="overflow-x-hidden">
+        <img class="w-11 rounded-full fixed right-3 bottom-2" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Chat-Icon.jpg?v=1690367119" alt="">
+        <!--First carosel-->
+        <div>
+        <div class="carousel w-screen md:hidden">
+            <div>
+     <img class="w-screen md:hidden" src="https://www.boat-lifestyle.com/cdn/shop/files/News_mobile_851d1a00-ec8d-4815-8d5c-0b65d29e2c91_600x.png?v=1688372087" alt="">
+    </div>
+    <div>
+     <img class="w-screen md:hidden" src="https://www.boat-lifestyle.com/cdn/shop/files/AD115_47750039-5439-4f4b-9f68-a7a69d0fc3d3_600x.png?v=1687717968" alt="">
+    </div>
+    </div>
+ </div>
+
+<!--First carosel for width is greater than md-->
+<div>
+    <div class="hidden md:block carousel w-screen object-cover">
+        <div> 
+ <img class="w-screen object-cover" src="https://www.boat-lifestyle.com/cdn/shop/files/blog_banners-min_1600x.png?v=1689063992" alt="">
+</div>
+<div>
+ <img class="w-screen object-cover" src="https://www.boat-lifestyle.com/cdn/shop/files/AD115_Desktop_1440x.png?v=1687717954" alt="">
+</div>
+</div>
+
+        <!--Trending-->
+        <div class="flex justify-between m-5">
+            <h1 class="text-2xl">Trending <span class="font-bold">Blo<span class="underline underline-offset-[6px] decoration-red-600">gs</span> </span> </h1>
+            <div class="flex">
+                <p class="text-sky-900">View All</p>
+                <svg class="ml-1 text-sky-900" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
+                    <path d="M16 12l-4 -4" />
+                    <path d="M16 12h-8" />
+                    <path d="M12 16l4 -4" />
+                  </svg>
+            </div>
+        </div>
+    <!--Trending cards-->
+     <div class="flex flex-col flex-wrap h-96 overflow-scroll scrollbar-hide">
+        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/1_1_600x.jpg?v=1695929892" alt="">
+            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+            <h1 class="font-bold">How Custom Watch Faces Enhance Your Daily Routine</h1>
+           <div class="flex justify-between">
+            <p class="text-slate-500">22 Sep, 2023</p> 
+            <p class="text-green-500">3 min read</p>
+         </div>
+        </div>
+        </div>
+
+        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/5_1_600x.jpg?v=1695894844" alt="">
+            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+            <h1 class="font-bold">Customising Your Smartwatch For Your Every Requirement</h1>
+           <div class="flex justify-between">
+            <p class="text-slate-500">21 Sep, 2023</p> 
+            <p class="text-green-500">5 min read</p>
+         </div>
+        </div>
+        </div>
+
+        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/6_600x.jpg?v=1695815684" alt="">
+            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+            <h1 class="font-bold">Cricket Training Goes High-tech: Revolutionising the Game...</h1>
+           <div class="flex justify-between">
+            <p class="text-slate-500">20 Sep, 2023</p> 
+            <p class="text-green-500">4 min read</p>
+         </div>
+        </div>
+        </div>
+
+        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/banner_600x.png?v=1688023063" alt="">
+            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+            <h1 class="font-bold">boAt's First Dolby Power Neckband with Hybrid ANC Feature...</h1>
+           <div class="flex justify-between">
+            <p class="text-slate-500">11 Jul, 2023</p> 
+            <p class="text-green-500">5 min read</p>
+         </div>
+        </div>
+        </div>
+
+        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/blog_banner_street_fashion_1_600x.png?v=1684135161" alt="">
+            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+            <h1 class="font-bold">The Sidewalk Runway</h1>
+           <div class="flex justify-between">
+            <p class="text-slate-500">15 May, 2023</p> 
+            <p class="text-green-500">4 min read</p>
+         </div>
+        </div>
+        </div>
+   
+    </div>
+    <!--News-->
+        <div class="flex justify-between m-5">
+            <h1 class="text-2xl">Latest <span class="font-bold">Ne<span class="underline decoration-red-600">ws</span> </span> </h1>
+            <div class="flex">
+                <p class="text-sky-900">View All</p>
+                <svg class="ml-1 text-sky-900" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
+                    <path d="M16 12l-4 -4" />
+                    <path d="M16 12h-8" />
+                    <path d="M12 16l4 -4" />
+                  </svg>
+            </div>
+        </div>
+
+        <!--News cards start from here-->
+        <div class="flex flex-col flex-wrap h-96 overflow-scroll scrollbar-hide">
+            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/blog_banner1_600x.png?v=1676377102" alt="">
+                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+                <h1 class="font-bold">Social Welfare Initiatives 2022 - A Look Back</h1>
+               <div class="flex justify-between">
+                <p class="text-slate-500">15 Feb, 2023</p> 
+                <p class="text-green-500">3 min read</p>
+             </div>
+            </div>
+            </div>
+    
+            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/News_700x.png?v=1667822120" alt="">
+                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+                <h1 class="font-bold">Scaling Up With New Conviction: boAt Raises INR 500 Crore...</h1>
+               <div class="flex justify-between">
+                <p class="text-slate-500">07 Nov, 2022</p> 
+                <p class="text-green-500">3 min read</p>
+             </div>
+            </div>
+            </div>
+    
+            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/Blog-1_700x.jpg?v=1664539128" alt="">
+                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+                <h1 class="font-bold">Imagine Marketing India Ranked Amongst The Top 5 Wearable...</h1>
+               <div class="flex justify-between">
+                <p class="text-slate-500">30 Sep, 2022</p> 
+                <p class="text-green-500">2 min read</p>
+             </div>
+            </div>
+            </div>
+    
+            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/News-Banner-png_700x.png?v=1655731912" alt="">
+                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+                <h1 class="font-bold">boAt And DC Comics Collaborate to Launch New Audiowear De...</h1>
+               <div class="flex justify-between">
+                <p class="text-slate-500">20 Jun, 2022</p> 
+                <p class="text-green-500">1 min read</p>
+             </div>
+            </div>
+            </div>
+    
+            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
+                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/img_174157_amanguptaandsameermehta_700x.jpg?v=1654850612" alt="">
+                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
+                <h1 class="font-bold">The Bro Code - Meet The Sound Industry's New Disruptors</h1>
+               <div class="flex justify-between">
+                <p class="text-slate-500">05 May, 2022</p> 
+                <p class="text-green-500">7 min read</p>
+             </div>
+            </div>
+            </div>
+       
+        </div>
+
+
+    </section>
+
+    <footer></footer>
+    <!-- Script for Slick carousel -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="./slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.carousel').slick({
+					slidesToShow: 1,
+					autoplay: true,
+					adaptiveHeight: true,
+					arrows: true,
+					dots: true,
+				})
+			})
+		</script>
+</body>
+</html>
