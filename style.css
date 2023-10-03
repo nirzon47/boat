@@ -772,6 +772,10 @@ video {
   margin-top: 0.625rem !important;
 }
 
+.mt-24 {
+  margin-top: 6rem !important;
+}
+
 .mt-3 {
   margin-top: 0.75rem !important;
 }
@@ -792,8 +796,8 @@ video {
   margin-top: 2px !important;
 }
 
-.mt-24 {
-  margin-top: 6rem !important;
+.mt-6 {
+  margin-top: 1.5rem !important;
 }
 
 .box-border {
@@ -922,6 +926,10 @@ video {
 
 .h-screen {
   height: 100vh !important;
+}
+
+.h-\[280px\] {
+  height: 280px !important;
 }
 
 .max-h-\[1200px\] {
@@ -1076,6 +1084,14 @@ video {
 
 .w-screen {
   width: 100vw !important;
+}
+
+.w-\[40\%\] {
+  width: 40% !important;
+}
+
+.w-\[60\%\] {
+  width: 60% !important;
 }
 
 .min-w-\[300px\] {
@@ -1243,6 +1259,11 @@ video {
 .gap-x-5 {
   -moz-column-gap: 1.25rem !important;
        column-gap: 1.25rem !important;
+}
+
+.gap-x-7 {
+  -moz-column-gap: 1.75rem !important;
+       column-gap: 1.75rem !important;
 }
 
 .justify-self-end {
@@ -1657,6 +1678,16 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[\#d0d9de\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(208 217 222 / var(--tw-bg-opacity)) !important;
+}
+
+.bg-\[\#f7f9fa\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(247 249 250 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-search-in-header {
@@ -2128,6 +2159,18 @@ video {
   text-decoration-color: #dc2626 !important;
 }
 
+.decoration-transparent {
+  text-decoration-color: transparent !important;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px !important;
+}
+
+.underline-offset-4 {
+  text-underline-offset: 4px !important;
+}
+
 .underline-offset-\[6px\] {
   text-underline-offset: 6px !important;
 }
@@ -2148,8 +2191,30 @@ video {
   outline-offset: 2px !important;
 }
 
+.transition-all {
+  transition-property: all !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition-duration: 150ms !important;
+}
+
+.delay-300 {
+  transition-delay: 300ms !important;
+}
+
+.duration-150 {
+  transition-duration: 150ms !important;
+}
+
 .duration-300 {
   transition-duration: 300ms !important;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1) !important;
 }
 
 /* make extras classes for no repeating codes */
@@ -2190,6 +2255,14 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700 !important;
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline !important;
+}
+
+.hover\:decoration-boat-red:hover {
+  text-decoration-color: #d83333 !important;
 }
 
 @media (min-width: 500px) {
@@ -2262,12 +2335,20 @@ video {
     margin-top: 0px !important;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px !important;
+  }
+
   .md\:\!block {
     display: block !important;
   }
 
   .md\:block {
     display: block !important;
+  }
+
+  .md\:inline-block {
+    display: inline-block !important;
   }
 
   .md\:flex {
@@ -2296,6 +2377,18 @@ video {
 
   .md\:w-\[268px\] {
     width: 268px !important;
+  }
+
+  .md\:w-4\/12 {
+    width: 33.333333% !important;
+  }
+
+  .md\:w-\[23\%\] {
+    width: 23% !important;
+  }
+
+  .md\:w-full {
+    width: 100% !important;
   }
 
   .md\:auto-cols-\[35vw\] {
@@ -2336,14 +2429,27 @@ video {
     line-height: 1rem !important;
   }
 
+  .md\:font-bold {
+    font-weight: 700 !important;
+  }
+
   .md\:leading-\[27px\] {
     line-height: 27px !important;
   }
 }
 
 @media (min-width: 1000px) {
+  .lg\:mx-0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
   .lg\:mb-2 {
     margin-bottom: 0.5rem !important;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px !important;
   }
 
   .lg\:flex {
@@ -2406,6 +2512,14 @@ video {
     padding-bottom: 2.25rem !important;
   }
 
+  .lg\:pl-5 {
+    padding-left: 1.25rem !important;
+  }
+
+  .lg\:text-left {
+    text-align: left !important;
+  }
+
   .lg\:text-base {
     font-size: 1rem !important;
     line-height: 1.5rem !important;
@@ -2422,6 +2536,10 @@ video {
 }
 
 @media (min-width: 1200px) {
+  .xl\:order-\[-1\] {
+    order: -1 !important;
+  }
+
   .xl\:flex {
     display: flex !important;
   }
