@@ -642,6 +642,11 @@ video {
   z-index: 50 !important;
 }
 
+.mx-3 {
+  margin-left: 0.75rem !important;
+  margin-right: 0.75rem !important;
+}
+
 .mx-4 {
   margin-left: 1rem !important;
   margin-right: 1rem !important;
@@ -1276,11 +1281,6 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity)) !important;
 }
 
-.bg-gray-200 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity)) !important;
-}
-
 .bg-gray-500 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity)) !important;
@@ -1636,6 +1636,37 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
+/* make extras classes for no repeating codes */
+
+.details-card {
+  position: relative;
+  display: flex;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+}
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  z-index: 20;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding: 0.25rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.bg{
+  background-color: #fafafa;
+  border: 1px solid #ecf0f4;
+}
+
+.fea{
+  background-color: #eff4f7;
+}
+
 .hover\:bg-slate-200:hover {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(226 232 240 / var(--tw-bg-opacity)) !important;
@@ -1738,6 +1769,10 @@ video {
 
   .md\:auto-cols-\[35vw\] {
     grid-auto-columns: 35vw !important;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 
   .md\:gap-8 {
