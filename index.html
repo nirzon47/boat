@@ -15,6 +15,10 @@
 
 		<!-- Custom CSS -->
 		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
 			.scrollbar-hide::-webkit-scrollbar {
 				display: none;
 			}
@@ -58,22 +62,9 @@
 									src="./assets/images/hamburger-icon.png"
 									alt="burger menu icon"
 								/>
-								<a href="">
+								<a href="" class="md:hidden">
 									<img
-										class="h-auto w-[60px] header-smaller-tablet:w-[85px] md:hidden"
-										src="./assets/images/logo.svg"
-										height="62"
-										width="151"
-										alt="boat logo"
-									/>
-								</a>
-							</section>
-
-							<!-- Logo for tablet + -->
-							<section>
-								<a href="">
-									<img
-										class="h-auto w-[60px] header-smaller-tablet:w-[85px] hidden md:block"
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
 										src="./assets/images/logo.svg"
 										height="62"
 										width="151"
@@ -83,11 +74,11 @@
 							</section>
 
 							<!-- Links section -->
-							<section class="hidden xl:flex gap-x-4">
+							<section class="hidden xl:flex gap-x-7">
 								<!-- Categories -->
 								<a
-									href=""
-									class="flex items-center duration-300 after:content-[border w-2] gap-x-2 hover:font-bold"
+									href="#"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
 								>
 									<p>Categories</p>
 									<svg
@@ -109,27 +100,32 @@
 
 								<!-- Daily Deals -->
 								<a
-									href=""
-									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+									href="./deals.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
 								>
 									<p>Daily Deals</p>
 								</a>
 
+								<!-- Gift with boAt -->
 								<a
-									href=""
-									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+									href="./gift_with_boat.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
 								>
 									<p>Gift with boAt</p>
 								</a>
+
+								<!-- Bulk Orders -->
 								<a
 									href=""
-									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
 								>
 									<p>Bulk Orders</p>
 								</a>
+
+								<!-- More -->
 								<a
 									href=""
-									class="flex items-center duration-300 after:content-[border w-2] gap-x-2 hover:font-bold"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
 								>
 									<p>More</p>
 									<svg
@@ -151,6 +147,19 @@
 							</section>
 						</div>
 
+						<!-- Logo for tablet + -->
+						<section class="hidden md:inline-block xl:order-[-1]">
+							<a href="">
+								<img
+									class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
+									src="./assets/images/logo.svg"
+									height="62"
+									width="151"
+									alt="boat logo"
+								/>
+							</a>
+						</section>
+
 						<!-- Right Section -->
 						<section
 							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto"
@@ -171,16 +180,20 @@
 								</div>
 							</div>
 							<img
-								class="w-5 h-5 header-smaller-tablet:hidden"
+								class="w-5 h-5 cursor-pointer header-smaller-tablet:hidden"
 								src="./assets/images/search.webp"
 								alt="Search icon"
 							/>
 							<img
-								class="hidden header-smaller-tablet:block h-[22px] w-[22px]"
+								class="hidden header-smaller-tablet:block h-[22px] w-[22px] cursor-pointer"
 								src="./assets/images/profile.webp"
 								alt="User Profile"
 							/>
-							<img src="./assets/images/bag.svg" alt="Shopping bag" />
+							<img
+								class="cursor-pointer"
+								src="./assets/images/bag.svg"
+								alt="Shopping bag"
+							/>
 						</section>
 					</div>
 					<!-- Search Bar -->
@@ -280,9 +293,9 @@
 				</div>
 			</div>
 
-			<!-- Body -->
+			<!-- Body (nirzon47) -->
 			<div class="px-4 header-smaller-tablet:px-10">
-				<!-- Categories -->
+				<!-- Categories (Mobile) -->
 				<div
 					class="flex items-center justify-center py-1 overflow-hidden category:hidden mb-[25px]"
 				>
@@ -364,12 +377,14 @@
 
 				<!-- Explore Bestsellers -->
 				<div>
+					<!-- Heading -->
 					<h3 class="mb-3 text-2xl font-medium">
 						Explore
 						<span class="font-bold"
 							>Bestselle<span class="border-b-2 border-boat-red">rs</span></span
 						>
 					</h3>
+					<!-- Content -->
 					<div
 						class="flex items-center justify-center py-1 overflow-hidden mb-[25px]"
 					>
@@ -462,6 +477,7 @@
 
 				<!-- Daily Deals -->
 				<div class="mb-[25px]">
+					<!-- Heading -->
 					<div class="flex items-center justify-between">
 						<h3 class="mb-3 text-2xl font-medium">
 							Daily
@@ -489,8 +505,9 @@
 							</svg>
 						</p>
 					</div>
+					<!-- Content -->
 					<div
-						class="grid auto-cols-[72vw] overflow-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)]"
+						class="grid auto-cols-[72vw] overflow-x-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)] xl:justify-between xl:gap-4"
 					>
 						<!-- Card -->
 						<div class="rounded-[10px]">
@@ -516,7 +533,7 @@
 							>
 								<div class="mt-2">
 									<div class="flex items-center justify-between">
-										<h4 class="font-bold text-sm tracking-[-0.56px]">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
 											Airdopes 131
 										</h4>
 										<div class="flex items-center gap-1">
@@ -537,8 +554,9 @@
 									<div class="flex justify-between pt-2">
 										<div>
 											<div class="flex items-center">
-												<h4 class="mr-1 font-bold">₹849</h4>
-												<span class="mr-1 text-xs line-through text-og-price"
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">₹849</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
 													>₹2,990</span
 												>
 												<span class="text-[10px] text-discount font-bold"
@@ -619,7 +637,7 @@
 							>
 								<div class="mt-2">
 									<div class="flex items-center justify-between">
-										<h4 class="font-bold text-sm tracking-[-0.56px]">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
 											Airdopes 161
 										</h4>
 										<div class="flex items-center gap-1">
@@ -639,8 +657,9 @@
 									<div class="flex justify-between pt-2">
 										<div>
 											<div class="flex items-center">
-												<h4 class="mr-1 font-bold">₹999</h4>
-												<span class="mr-1 text-xs line-through text-og-price"
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">₹999</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
 													>₹2,490</span
 												>
 												<span class="text-[10px] text-discount font-bold"
@@ -718,7 +737,7 @@
 							>
 								<div class="mt-2">
 									<div class="flex items-center justify-between">
-										<h4 class="font-bold text-sm tracking-[-0.56px]">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
 											Rockerz 235 V2
 										</h4>
 										<div class="flex items-center gap-1">
@@ -739,8 +758,9 @@
 									<div class="flex justify-between pt-2">
 										<div>
 											<div class="flex items-center">
-												<h4 class="mr-1 font-bold">₹799</h4>
-												<span class="mr-1 text-xs line-through text-og-price"
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">₹799</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
 													>₹2,990</span
 												>
 												<span class="text-[10px] text-discount font-bold"
@@ -821,7 +841,7 @@
 							>
 								<div class="mt-2">
 									<div class="flex items-center justify-between">
-										<h4 class="font-bold text-sm tracking-[-0.56px]">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
 											Airdopes 141
 										</h4>
 										<div class="flex items-center gap-1">
@@ -841,8 +861,9 @@
 									<div class="flex justify-between pt-2">
 										<div>
 											<div class="flex items-center">
-												<h4 class="mr-1 font-bold">₹849</h4>
-												<span class="mr-1 text-xs line-through text-og-price"
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">₹849</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
 													>₹4,490</span
 												>
 												<span class="text-[10px] text-discount font-bold"
@@ -901,11 +922,986 @@
 						<!-- End of Card -->
 					</div>
 				</div>
+
+				<!-- Categories Default -->
+				<div class="mb-10">
+					<div>
+						<!-- Heading -->
+						<h3 class="mb-3 text-2xl font-medium">
+							Shop By
+							<span class="font-bold"
+								>Categori<span class="border-b-2 border-boat-red"
+									>es</span
+								></span
+							>
+						</h3>
+						<!-- Content -->
+						<div class="mt-2">
+							<!-- Mobile Version -->
+							<div
+								class="flex overflow-x-scroll scrollbar-hide md:hidden gap-[10px] mb-4"
+							>
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-1.webp"
+											alt="True Wireless Buds"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											True Wireless Buds
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-2.webp"
+											alt="Neckbands"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Neckbands
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-3.webp"
+											alt="Smart Watches"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Smart Watches
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-4.webp"
+											alt="Wireless Headphones"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Wireless Headphones
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-5.webp"
+											alt="Wireless Speakers"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Wireless Speakers
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-6.webp"
+											alt="Wired Headphones"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Wired Headphones
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-7.webp"
+											alt="Wired Earphones"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Wired Earphones
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-8.webp"
+											alt="Soundbars"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Soundbars
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-9.webp"
+											alt="Gaming Headphones"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Gaming Headphones
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-10.webp"
+											alt="Party Speakers"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Party Speakers
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-11.webp"
+											alt="Trimmers"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Trimmers
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-12.webp"
+											alt="Chargers"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Chargers
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-13.webp"
+											alt="Power Banks"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Power Banks
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-14.webp"
+											alt="Cables"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Cables
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-15.webp"
+											alt="Car Accessories"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Car Accessories
+										</p>
+									</div>
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-16.webp"
+											alt="TRebel Range"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											TRebel Range
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+								<!-- Column -->
+								<div class="grid">
+									<div class="w-[72px]">
+										<img
+											class="w-full mt-3"
+											src="./assets/images/category-d-17.webp"
+											alt="Limited Editions"
+										/>
+										<p
+											class="leading-none text-[10px] font-bold text-cart text-center mt-3"
+										>
+											Limited Editions
+										</p>
+									</div>
+								</div>
+								<!-- End of Column -->
+							</div>
+
+							<!-- Tablet+ Version -->
+							<div class="hidden mb-4 overflow-x-scroll md:flex scrollbar-hide">
+								<div class="flex gap-[28px] shrink-0">
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-1.webp"
+											alt="True Wireless Buds"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											True Wireless Buds
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-2.webp"
+											alt="Neckbands"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Neckbands
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-3.webp"
+											alt="Smart Watches"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Smart Watches
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-4.webp"
+											alt="Wireless Headphones"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Wireless Headphones
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-5.webp"
+											alt="Wireless Speakers"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Wireless Speakers
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-6.webp"
+											alt="Wired Headphones"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Wired Headphones
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-7.webp"
+											alt="Wired Earphones"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Wired Earphones
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-8.webp"
+											alt="Soundbars"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Soundbars
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-9.webp"
+											alt="Gaming Headphones"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Gaming Headphones
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-10.webp"
+											alt="Party Speakers"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Party Speakers
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-11.webp"
+											alt="Trimmers"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Trimmers
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-12.webp"
+											alt="Chargers"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Chargers
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-13.webp"
+											alt="Power Banks"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Power Banks
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-14.webp"
+											alt="Cables"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Cables
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-15.webp"
+											alt="Car Accessories"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Car Accessories
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-16.webp"
+											alt="TRebel Range"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											TRebel Range
+										</p>
+									</div>
+									<div class="w-[98px] flex flex-col items-center">
+										<img
+											class="w-[82px] mt-5 mx-auto"
+											src="./assets/images/category-d-17.webp"
+											alt="Limited Editions"
+										/>
+										<p
+											class="leading-none text-[14px] font-bold text-cart text-center mt-3"
+										>
+											Limited Editions
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- New Launches -->
+				<div class="mb-[25px]">
+					<!-- Heading -->
+					<div class="flex items-center justify-between">
+						<h3 class="mb-3 text-2xl font-medium">
+							New
+							<span class="font-bold"
+								>Launch<span class="border-b-2 border-boat-red">es</span></span
+							>
+						</h3>
+						<p
+							class="flex items-center gap-1 text-sm font-bold text-button-blue"
+						>
+							View All
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="14"
+								height="14"
+								viewBox="0 0 14 14"
+							>
+								<path
+									id="Path_337386"
+									data-name="Path 337386"
+									d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+									transform="translate(-1.155 11.307)"
+									fill="#2f5b96"
+								></path>
+							</svg>
+						</p>
+					</div>
+					<!-- Content -->
+					<div
+						class="grid auto-cols-[72vw] overflow-x-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)] xl:justify-between xl:gap-4"
+					>
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>50W RMS Sound</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>🎉 New Launch</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/new-launch-1.webp"
+									alt="Party Pal 185"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
+											Party Pal 185
+										</h4>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">
+													₹7,999
+												</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+													>₹17,990</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>56% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">Be first to review</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>6 Hours Playback</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>🎉 New Launch</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/new-launch-2.webp"
+									alt="Party Pal 195"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
+											Party Pal 195
+										</h4>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">
+													₹7,999
+												</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+													>₹17,990</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>56% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">Be first to review</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>BT Calling</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>🎉 New Launch</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/new-launch-3.webp"
+									alt="Lunar Comet"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
+											Lunar Comet
+										</h4>
+										<div class="flex items-center gap-1">
+											<div class="flex items-center">
+												<span
+													class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#8a8a8a]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#c06a3a]"
+												></span>
+											</div>
+											<p class="text-[14px] text-[#4e5358]">+4</p>
+										</div>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">
+													₹1,299
+												</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+													>₹6,999</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>81% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">Be first to review</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div
+								class="relative p-8 bg-[#e3e3e3] rounded-tl-[10px] rounded-tr-[10px]"
+							>
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>Noise Cancellation</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>🎉 New Launch</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/new-launch-4.webp"
+									alt="Airdopes Bliss ANC"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="text-sm font-bold tracking-[-0.56px]">
+											Airdopes Bliss ANC
+										</h4>
+										<div class="flex items-center gap-1">
+											<div class="flex items-center">
+												<span
+													class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 bg-white border rounded-full border-card-span-border"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#5a7d81]"
+												></span>
+											</div>
+											<p class="text-[14px] text-[#4e5358]">+4</p>
+										</div>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold tracking-[-0.64px]">
+													₹1,999
+												</h4>
+												<span
+													class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+													>₹5,990</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>67% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">Be first to review</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+					</div>
+				</div>
+
+				<!-- Features -->
+				<div
+					class="flex justify-center gap-2 category:gap-4 md:gap-8 lg:gap-32"
+				>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-1.svg"
+								alt="Warranty"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							<b>1 year</b><br />
+							Warranty
+						</p>
+					</div>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-2.svg"
+								alt="Replacement"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							<b>7 day</b><br />
+							Replacement
+						</p>
+					</div>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-3.svg"
+								alt="Shipping"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							<b>Free</b><br />
+							Shipping
+						</p>
+					</div>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-4.svg"
+								alt="GST"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							<b>GST</b><br />
+							Billing
+						</p>
+					</div>
+				</div>
 			</div>
 
 			<!-- Bottom Navbar for mobile -->
+			<div class="mt-[5rem] md:hidden"></div>
 			<div
-				class="sticky bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden"
+				class="fixed bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden"
 			>
 				<div class="flex justify-evenly">
 					<div
@@ -992,9 +1988,7 @@
 						dots: false,
 						speed: 1500,
 					})
-				})
-
-
+			})
 		</script>
 	</body>
 </html>
