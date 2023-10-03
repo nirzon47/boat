@@ -2351,6 +2351,7 @@
 				$('.text-carousel').slick({
 					slidesToShow: 1,
 					autoplay: true,
+<<<<<<< HEAD
 					vertical: true,
 					arrows: false,
 					dots: false,
@@ -2361,3 +2362,31 @@
 </body>
 
 </html>
+=======
+					adaptiveHeight: true,
+					arrows: true,
+					dots: true,
+					responsive: [
+						{
+							breakpoint: 1000,
+							settings: {
+								arrows: false,
+							},
+						},
+					],
+				}),
+					$('.text-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						vertical: true,
+						arrows: false,
+						dots: false,
+						speed: 1500,
+					})
+				})
+
+
+		</script>
+	</body>
+</html>
+>>>>>>> c33adb91e9bb3d3ec0c15a45da858acd65ea8ecc

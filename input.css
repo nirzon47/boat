@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* make extras classes for no repeating codes */
+.details-card{
+	@apply flex rounded-xl relative p-1;
+}
+
+.badge{
+	@apply bg-black text-white top-2 absolute z-20 p-1 rounded font-bold;
+}
+
+.bg{
+	background-color: #fafafa;
+	border: 1px solid #ecf0f4;
+}
+
+.fea{
+	background-color: #eff4f7;
+}
+
+
 @layer base {
 	@font-face {
 		font-family: Metropolis;
