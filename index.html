@@ -12,128 +12,954 @@
 		<!-- Slick CSS -->
 		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
 		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+		<!-- Custom CSS -->
+		<style>
+			.scrollbar-hide::-webkit-scrollbar {
+				display: none;
+			}
+
+			/* For IE, Edge and Firefox */
+			.scrollbar-hide {
+				-ms-overflow-style: none; /* IE and Edge */
+				scrollbar-width: none; /* Firefox */
+			}
+		</style>
 	</head>
-	<body class="relative overflow-auto antialiased font-metropolis">
-		<!-- Announcement bar -->
-		<section
-			class="h-[38px] px-[20px] text-center flex items-center bg-announcement"
-		>
-			<a>
-				<p class="text-[11px] px-[22px] py-2 font-medium leading-none">
-					Getting you the power of good sound. <b>boAtxMarvel</b> is Live. Grab
-					Now!
-				</p>
-			</a>
-		</section>
+	<body class="antialiased font-metropolis">
+		<!-- Entire Page content -->
+		<div class="w-screen h-screen overflow-x-hidden">
+			<!-- Announcement bar -->
+			<section
+				class="h-[38px] px-[20px] text-center flex items-center justify-center bg-announcement"
+			>
+				<a>
+					<p
+						class="text-[11px] md:text-xs px-[22px] py-2 font-medium leading-none"
+					>
+						Getting you the power of good sound. <b>boAtxMarvel</b> is Live.
+						Grab Now!
+					</p>
+				</a>
+			</section>
 
-		<!-- Top Navbar -->
-		<nav class="sticky top-0 z-[10000] block w-full bg-white h-14">
-			<div class="flex justify-between w-full px-3 py-4 mx-auto">
-				<!-- Left Section -->
-				<section class="flex items-center gap-5">
-					<img
-						class="max-w-[18px] w-[18px] h-[14px]"
-						src="./assets/images/hamburger-icon.png"
-						alt="burger menu icon"
-					/>
-					<img
-						class="h-[25px] w-[60px] max-w-[60px]"
-						src="./assets/images/logo.svg"
-						height="62"
-						width="151"
-						alt="boat logo"
-					/>
-				</section>
+			<!-- Top Navbar -->
+			<nav
+				class="sticky top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
+			>
+				<div class="flex flex-col items-center justify-center h-full">
+					<!-- Top Section -->
+					<div class="flex justify-between w-full px-3 py-4 mx-auto md:px-10">
+						<!-- Left Section for mobile + tablet -->
+						<div class="flex gap-12">
+							<section class="flex items-center gap-5 w-[85px] xl:hidden">
+								<img
+									class="h-[14px] cursor-pointer"
+									src="./assets/images/hamburger-icon.png"
+									alt="burger menu icon"
+								/>
+								<a href="">
+									<img
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px] md:hidden"
+										src="./assets/images/logo.svg"
+										height="62"
+										width="151"
+										alt="boat logo"
+									/>
+								</a>
+							</section>
 
-				<!-- Right Section -->
-				<section class="flex items-center gap-4">
-					<img
-						class="w-5 h-5"
-						src="./assets/images/search.webp"
-						alt="Search icon"
-					/>
-					<img src="./assets/images/bag.svg" alt="Shopping bag" />
-				</section>
+							<!-- Logo for tablet + -->
+							<section>
+								<a href="">
+									<img
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px] hidden md:block"
+										src="./assets/images/logo.svg"
+										height="62"
+										width="151"
+										alt="boat logo"
+									/>
+								</a>
+							</section>
+
+							<!-- Links section -->
+							<section class="hidden xl:flex gap-x-4">
+								<!-- Categories -->
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] gap-x-2 hover:font-bold"
+								>
+									<p>Categories</p>
+									<svg
+										style="rotate: 90deg !important"
+										focusable="false"
+										width="7"
+										height="10"
+										class="icon icon--dropdown-arrow-right icon--direction-aware"
+										viewBox="0 0 7 10"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+
+								<!-- Daily Deals -->
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+								>
+									<p>Daily Deals</p>
+								</a>
+
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+								>
+									<p>Gift with boAt</p>
+								</a>
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+								>
+									<p>Bulk Orders</p>
+								</a>
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] gap-x-2 hover:font-bold"
+								>
+									<p>More</p>
+									<svg
+										style="rotate: 90deg !important"
+										focusable="false"
+										width="7"
+										height="10"
+										class="icon icon--dropdown-arrow-right icon--direction-aware"
+										viewBox="0 0 7 10"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+							</section>
+						</div>
+
+						<!-- Right Section -->
+						<section
+							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto"
+						>
+							<div class="justify-center hidden w-full xl:flex">
+								<div class="relative">
+									<input
+										class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto"
+										type="text"
+									/>
+									<div
+										class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+									>
+										<p>Search <span class="font-bold">"Earphones"</span></p>
+										<p>Search <span class="font-bold">"Smartwatches"</span></p>
+										<p>Search <span class="font-bold">"Speakers"</span></p>
+									</div>
+								</div>
+							</div>
+							<img
+								class="w-5 h-5 header-smaller-tablet:hidden"
+								src="./assets/images/search.webp"
+								alt="Search icon"
+							/>
+							<img
+								class="hidden header-smaller-tablet:block h-[22px] w-[22px]"
+								src="./assets/images/profile.webp"
+								alt="User Profile"
+							/>
+							<img src="./assets/images/bag.svg" alt="Shopping bag" />
+						</section>
+					</div>
+					<!-- Search Bar -->
+					<div class="justify-center hidden w-full md:flex xl:hidden">
+						<div class="relative">
+							<input
+								class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto"
+								type="text"
+							/>
+							<div
+								class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+							>
+								<p>Search <span class="font-bold">"Earphones"</span></p>
+								<p>Search <span class="font-bold">"Smartwatches"</span></p>
+								<p>Search <span class="font-bold">"Speakers"</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Carousel using Slick -->
+			<div class="mb-[25px] z-10">
+				<div class="carousel md:!hidden">
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-1-mobile.webp"
+							alt="Lunar Comet"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-2-mobile.webp"
+							alt="Deadpool edition"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-3-mobile.webp"
+							alt="Lunar Mirage"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-4-mobile.webp"
+							alt="Lunar Prime"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-5-mobile.webp"
+							alt="Wave Pro"
+						/>
+					</div>
+				</div>
+				<div class="carousel hidden md:!block">
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-tablet-1.webp"
+							alt="Lunar Comet"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-tablet-2.webp"
+							alt="Deadpool edition"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-tablet-3.webp"
+							alt="Lunar Mirage"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-tablet-4.webp"
+							alt="Lunar Prime"
+						/>
+					</div>
+					<div>
+						<img
+							class="w-full"
+							src="./assets/images/c-tablet-5.webp"
+							alt="Wave Pro"
+						/>
+					</div>
+				</div>
 			</div>
-		</nav>
 
-		<!-- Carousel using Slick -->
-		<div class="mb-[25px]">
-			<div class="carousel">
-				<div>
-					<img src="./assets/images/c-1-mobile.webp" alt="Lunar Comet" />
+			<!-- Body -->
+			<div class="px-4 header-smaller-tablet:px-10">
+				<!-- Categories -->
+				<div
+					class="flex items-center justify-center py-1 overflow-hidden category:hidden mb-[25px]"
+				>
+					<div
+						class="flex justify-between overflow-x-scroll gap-x-5 scrollbar-hide"
+					>
+						<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+							<div class="h-[60px] w-[60px]">
+								<img
+									class="p-[3px] border-2 rounded-full border-boat-red"
+									src="./assets/images/category-1.webp"
+									alt="Best Sellers"
+								/>
+							</div>
+							<div
+								class="font-bold text-[10px] text-center w-3/4 h-[30px] leading-none"
+							>
+								Best Sellers
+							</div>
+						</div>
+						<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+							<div class="h-[60px] w-[60px]">
+								<img
+									class="p-[3px] border-2 rounded-full border-boat-red"
+									src="./assets/images/category-2.webp"
+									alt="New Launches"
+								/>
+							</div>
+							<div
+								class="font-bold text-[10px] text-center h-[30px] leading-none"
+							>
+								New Launches
+							</div>
+						</div>
+						<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+							<div class="h-[60px] w-[60px]">
+								<img
+									class="p-[3px] border-2 rounded-full border-boat-red"
+									src="./assets/images/category-3.jpg"
+									alt="Limited Edition"
+								/>
+							</div>
+							<div
+								class="font-bold text-[10px] text-center h-[30px] leading-none"
+							>
+								Limited Edition
+							</div>
+						</div>
+						<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+							<div class="h-[60px] w-[60px]">
+								<img
+									class="p-[3px] border-2 rounded-full border-boat-red"
+									src="./assets/images/category-4.webp"
+									alt="boAt Smartwatches"
+								/>
+							</div>
+							<div
+								class="font-bold text-[10px] text-center h-[30px] leading-none"
+							>
+								boAt Smartwatches
+							</div>
+						</div>
+						<div class="w-[64px] h-[90px] flex items-center flex-col gap-[5px]">
+							<div class="h-[60px] w-[60px]">
+								<img
+									class="p-[3px] border-2 rounded-full border-boat-red"
+									src="./assets/images/category-5.webp"
+									alt="boAt Airdopes"
+								/>
+							</div>
+							<div
+								class="font-bold text-[10px] text-center h-[30px] leading-none"
+							>
+								boAt Airdopes
+							</div>
+						</div>
+					</div>
 				</div>
+
+				<!-- Explore Bestsellers -->
 				<div>
-					<img src="./assets/images/c-2-mobile.webp" alt="Deadpool edition" />
+					<h3 class="mb-3 text-2xl font-medium">
+						Explore
+						<span class="font-bold"
+							>Bestselle<span class="border-b-2 border-boat-red">rs</span></span
+						>
+					</h3>
+					<div
+						class="flex items-center justify-center py-1 overflow-hidden mb-[25px]"
+					>
+						<div
+							class="flex justify-between overflow-x-scroll gap-x-5 scrollbar-hide"
+						>
+							<div>
+								<video
+									class="w-40 h-40 category:w-80 category:h-80 rounded-[10px] max-w-none"
+									src="./assets/videos/bestseller-1.mp4"
+									preload="none"
+									loop="true"
+									autoplay="true"
+									playsinline="true"
+									muted="true"
+								></video>
+								<p
+									class="text-xs font-medium text-center category:text-base category:font-bold"
+								>
+									Smartwatches
+								</p>
+							</div>
+							<div>
+								<video
+									class="w-40 h-40 category:w-80 category:h-80 rounded-[10px] max-w-none"
+									src="./assets/videos/bestseller-2.mp4"
+									preload="none"
+									loop="true"
+									autoplay="true"
+									playsinline="true"
+									muted="true"
+								></video>
+								<p
+									class="text-xs font-medium text-center category:text-base category:font-bold"
+								>
+									Wireless Earbuds
+								</p>
+							</div>
+							<div>
+								<video
+									class="w-40 h-40 category:w-80 category:h-80 rounded-[10px] max-w-none"
+									src="./assets/videos/bestseller-3.mp4"
+									preload="none"
+									loop="true"
+									autoplay="true"
+									playsinline="true"
+									muted="true"
+								></video>
+								<p
+									class="text-xs font-medium text-center category:text-base category:font-bold"
+								>
+									Neckbands
+								</p>
+							</div>
+							<div>
+								<video
+									class="w-40 h-40 category:w-80 category:h-80 rounded-[10px] max-w-none"
+									src="./assets/videos/bestseller-4.mp4"
+									preload="none"
+									loop="true"
+									autoplay="true"
+									playsinline="true"
+									muted="true"
+								></video>
+								<p
+									class="text-xs font-medium text-center category:text-base category:font-bold"
+								>
+									Headphones
+								</p>
+							</div>
+							<div>
+								<video
+									class="w-40 h-40 category:w-80 category:h-80 rounded-[10px] max-w-none"
+									src="./assets/videos/bestseller-5.mp4"
+									preload="none"
+									loop="true"
+									autoplay="true"
+									playsinline="true"
+									muted="true"
+								></video>
+								<p
+									class="text-xs font-medium text-center category:text-base category:font-bold"
+								>
+									Wireless Speakers
+								</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div>
-					<img src="./assets/images/c-3-mobile.webp" alt="Lunar Mirage" />
+
+				<!-- Daily Deals -->
+				<div class="mb-[25px]">
+					<div class="flex items-center justify-between">
+						<h3 class="mb-3 text-2xl font-medium">
+							Daily
+							<span class="font-bold"
+								>De<span class="border-b-2 border-boat-red">als</span></span
+							>
+						</h3>
+						<p
+							class="flex items-center gap-1 text-sm font-bold text-button-blue"
+						>
+							View All
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="14"
+								height="14"
+								viewBox="0 0 14 14"
+							>
+								<path
+									id="Path_337386"
+									data-name="Path 337386"
+									d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+									transform="translate(-1.155 11.307)"
+									fill="#2f5b96"
+								></path>
+							</svg>
+						</p>
+					</div>
+					<div
+						class="grid auto-cols-[72vw] overflow-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)]"
+					>
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>60 Hours Playback</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>🚀 Bestseller</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/daily-deals-1.webp"
+									alt="Airdopes 131"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="font-bold text-sm tracking-[-0.56px]">
+											Airdopes 131
+										</h4>
+										<div class="flex items-center gap-1">
+											<div class="flex items-center">
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#22201f]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#d1d1d1]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#d48f87]"
+												></span>
+											</div>
+											<p class="text-[14px] text-[#4e5358]">+4</p>
+										</div>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold">₹849</h4>
+												<span class="mr-1 text-xs line-through text-og-price"
+													>₹2,990</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>72% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">4.8</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>40 Hours Playback</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>✨ Trending</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/daily-deals-2.webp"
+									alt="Airdopes 161"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="font-bold text-sm tracking-[-0.56px]">
+											Airdopes 161
+										</h4>
+										<div class="flex items-center gap-1">
+											<div class="flex items-center">
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#0a0a0a]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#657286]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#e7e7e7]"
+												></span>
+											</div>
+										</div>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold">₹999</h4>
+												<span class="mr-1 text-xs line-through text-og-price"
+													>₹2,490</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>60% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">4.9</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>8 Hours Playback</span
+								>
+
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/daily-deals-3.webp"
+									alt="Rockerz 235 V2"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="font-bold text-sm tracking-[-0.56px]">
+											Rockerz 235 V2
+										</h4>
+										<div class="flex items-center gap-1">
+											<div class="flex items-center">
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#ff0000]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#000000]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#001cff]"
+												></span>
+											</div>
+											<p class="text-[14px] text-[#4e5358]">+2</p>
+										</div>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold">₹799</h4>
+												<span class="mr-1 text-xs line-through text-og-price"
+													>₹2,990</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>73% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">4.8</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+						<!-- Card -->
+						<div class="rounded-[10px]">
+							<!-- Image -->
+							<div class="relative">
+								<span
+									class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+									>42 Hours Playback</span
+								>
+								<span
+									class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+									>✨ Trending</span
+								>
+								<img
+									class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+									src="./assets/images/daily-deals-4.webp"
+									alt="Airdopes 141"
+								/>
+							</div>
+							<!-- Text -->
+							<div
+								class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+							>
+								<div class="mt-2">
+									<div class="flex items-center justify-between">
+										<h4 class="font-bold text-sm tracking-[-0.56px]">
+											Airdopes 141
+										</h4>
+										<div class="flex items-center gap-1">
+											<div class="flex items-center">
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#9c9c9c]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#080808]"
+												></span>
+												<span
+													class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#f2ffff]"
+												></span>
+											</div>
+										</div>
+									</div>
+									<div class="flex justify-between pt-2">
+										<div>
+											<div class="flex items-center">
+												<h4 class="mr-1 font-bold">₹849</h4>
+												<span class="mr-1 text-xs line-through text-og-price"
+													>₹4,490</span
+												>
+												<span class="text-[10px] text-discount font-bold"
+													>78% off</span
+												>
+											</div>
+											<div class="flex items-end gap-1">
+												<svg
+													class="w-4 h-4"
+													xmlns="http://www.w3.org/2000/svg"
+													width="12"
+													height="12"
+													viewBox="0 0 22 22"
+												>
+													<g
+														id="Group_334346"
+														data-name="Group 334346"
+														transform="translate(17150 -5434)"
+													>
+														<rect
+															id="Rectangle_114376"
+															data-name="Rectangle 114376"
+															width="22"
+															height="22"
+															transform="translate(-17150 5434)"
+															fill="transparent"
+														></rect>
+														<g
+															id="Group_334341"
+															data-name="Group 334341"
+															transform="translate(-17149 5435)"
+														>
+															<path
+																id="Path_332351"
+																data-name="Path 332351"
+																d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																transform="translate(-1144.374 -360.511)"
+																fill="#f4c730"
+																fill-rule="evenodd"
+															></path>
+														</g>
+													</g>
+												</svg>
+												<p class="text-xs">4.9</p>
+											</div>
+										</div>
+										<button
+											class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+										>
+											Add to Cart
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Card -->
+					</div>
 				</div>
-				<div>
-					<img src="./assets/images/c-4-mobile.webp" alt="Lunar Prime" />
-				</div>
-				<div><img src="./assets/images/c-5-mobile.webp" alt="Wave Pro" /></div>
 			</div>
-		</div>
 
-		<div class="w-screen h-screen"></div>
-		<div class="w-screen h-screen"></div>
-		<div class="w-screen h-screen"></div>
-
-		<!-- Bottom Navbar for mobile -->
-		<div
-			class="w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black"
-		>
-			<div class="flex justify-evenly">
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
-					<span
-						class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold"
-						>Home
-						<span class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"></span>
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						> <a href="./deals.html">Deals</a>
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img
-						class="h-7 w-7"
-						src="./assets/images/categories.svg"
-						alt="categories"
-					/>
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Categories
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Login
-					</span>
-				</div>
-				<div
-					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
-				>
-					<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
-					<span
-						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
-						>Chat
-					</span>
+			<!-- Bottom Navbar for mobile -->
+			<div
+				class="sticky bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden"
+			>
+				<div class="flex justify-evenly">
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
+						<span
+							class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold"
+							>Home
+							<span
+								class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"
+							></span>
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Deals
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img
+							class="h-7 w-7"
+							src="./assets/images/categories.svg"
+							alt="categories"
+						/>
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Categories
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Login
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Chat
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -149,7 +975,23 @@
 					adaptiveHeight: true,
 					arrows: true,
 					dots: true,
-				})
+					responsive: [
+						{
+							breakpoint: 1000,
+							settings: {
+								arrows: false,
+							},
+						},
+					],
+				}),
+					$('.text-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						vertical: true,
+						arrows: false,
+						dots: false,
+						speed: 1500,
+					})
 			})
 		</script>
 	</body>
