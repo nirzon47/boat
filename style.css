@@ -792,8 +792,8 @@ video {
   margin-top: 2px !important;
 }
 
-.mt-\[5rem\] {
-  margin-top: 5rem !important;
+.mt-24 {
+  margin-top: 6rem !important;
 }
 
 .box-border {
@@ -1243,11 +1243,6 @@ video {
 .gap-x-5 {
   -moz-column-gap: 1.25rem !important;
        column-gap: 1.25rem !important;
-}
-
-.gap-x-7 {
-  -moz-column-gap: 1.75rem !important;
-       column-gap: 1.75rem !important;
 }
 
 .justify-self-end {
@@ -2133,18 +2128,6 @@ video {
   text-decoration-color: #dc2626 !important;
 }
 
-.decoration-transparent {
-  text-decoration-color: transparent !important;
-}
-
-.decoration-2 {
-  text-decoration-thickness: 2px !important;
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px !important;
-}
-
 .underline-offset-\[6px\] {
   text-underline-offset: 6px !important;
 }
@@ -2165,16 +2148,8 @@ video {
   outline-offset: 2px !important;
 }
 
-.duration-150 {
-  transition-duration: 150ms !important;
-}
-
 .duration-300 {
   transition-duration: 300ms !important;
-}
-
-.ease-in-out {
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
 /* make extras classes for no repeating codes */
@@ -2215,14 +2190,6 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700 !important;
-}
-
-.hover\:underline:hover {
-  text-decoration-line: underline !important;
-}
-
-.hover\:decoration-boat-red:hover {
-  text-decoration-color: #d83333 !important;
 }
 
 @media (min-width: 500px) {
@@ -2301,10 +2268,6 @@ video {
 
   .md\:block {
     display: block !important;
-  }
-
-  .md\:inline-block {
-    display: inline-block !important;
   }
 
   .md\:flex {
@@ -2459,10 +2422,6 @@ video {
 }
 
 @media (min-width: 1200px) {
-  .xl\:order-\[-1\] {
-    order: -1 !important;
-  }
-
   .xl\:flex {
     display: flex !important;
   }
