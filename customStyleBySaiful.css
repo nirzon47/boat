@@ -1,0 +1,41 @@
+
+.section-heading h3 b::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #D83333;
+    position: absolute;
+    bottom: 0.5px;
+    right: 0;
+}
+
+.section-heading h3 .blogs-heading::after {
+    width: 12px;
+}
+
+/* Hide scrollbar for Firefox */
+.overflow-x-scroll {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE, Edge, and Safari */
+.overflow-x-scroll::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.overflow-x-scroll::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.privacy::after {
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 3px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8px;
+}
