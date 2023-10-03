@@ -12,213 +12,185 @@
 		<!-- Slick CSS -->
 	</head>
 	<body class="relative overflow-auto antialiased font-metropolis">
+
+		<!-- Announcement bar -->
+		<section
+		class="h-[38px] px-[20px] text-center flex items-center justify-center bg-announcement"
+	>
+		<a>
+			<p
+				class="text-[11px] md:text-xs px-[22px] py-2 font-medium leading-none"
+			>
+				Getting you the power of good sound. <b>boAtxMarvel</b> is Live.
+				Grab Now!
+			</p>
+		</a>
+	  </section>
 		<!-- header  -->
-		<header
-			class="nav-section sticky top-0 !bg-white-50 z-40 border border-black-200 bottom-12 bg-white"
-		>
-			<div class="mx-auto">
-				<nav class="flex items-center justify-between px-4 py-4">
-					<!-- --logo side--- -->
-					<div
-						class="flex items-center left-side md:grow xl:grow-0 xl:w-6/12 md:justify-between"
-					>
-						<div class="mr-6 text-xl font-light menu-bar lg:hidden">
-							<a href="">
-								<i class="fa-solid fa-bars"></i>
-							</a>
-						</div>
-						<div class="w-16 logo md:w-24">
-							<a href="">
+		<nav
+				class="sticky top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
+			>
+				<div class="flex flex-col items-center justify-center h-full">
+					<!-- Top Section -->
+					<div class="flex justify-between w-full px-3 py-4 mx-auto md:px-10">
+						<!-- Left Section for mobile + tablet -->
+						<div class="flex gap-12">
+							<section class="flex items-center gap-5 w-[85px] xl:hidden">
 								<img
-									src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
-									alt="logo"
-									srcset=""
+									class="h-[14px] cursor-pointer"
+									src="./assets/images/hamburger-icon.png"
+									alt="burger menu icon"
 								/>
-							</a>
-						</div>
-						<!-- ---- Navigation links side for large or above screens---- -->
-						<div class="hidden gap-6 nav-items lg:flex">
-							<div class="text-base item hover:font-bold">
-								<a href="#" class="flex items-center custom-hover-nv">
-									<span class="mr-1.5">Category </span>
-									<div class="h-full icon">
-										<svg
-											focusable="false"
-											width="7"
-											height="10"
-											class="rotate-90 my-[0.1rem]"
-											viewBox="0 0 7 10"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
-												fill="currentColor"
-											></path>
-										</svg>
-									</div>
+								<a href="/">
+									<img
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px] md:hidden"
+										src="./assets/images/logo.svg"
+										height="62"
+										width="151"
+										alt="boat logo"
+									/>
 								</a>
-							</div>
-							<div class="text-base item hover:font-bold">
-								<a href="#" class="">Daily Deals</a>
-							</div>
-							<div class="text-base item hover:font-bold">
-								<a href="#" class="">Gift with boAt</a>
-							</div>
-							<div class="text-base item hover:font-bold">
-								<a href="#" class="">Bulk Orders</a>
-							</div>
+							</section>
 
-							<div class="text-base item hover:font-bold">
-								<a href="#" class="flex items-center custom-hover-nv">
-									<span class="mr-1.5">More</span>
-									<div class="h-full icon">
-										<svg
-											focusable="false"
-											width="7"
-											height="10"
-											class="rotate-90 my-[0.1rem]"
-											viewBox="0 0 7 10"
-										>
-											<path
-												fill-rule="evenodd"
-												clip-rule="evenodd"
-												d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
-												fill="currentColor"
-											></path>
-										</svg>
-									</div>
+							<!-- Logo for tablet + -->
+							<section>
+								<a href="">
+									<img
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px] hidden md:block"
+										src="./assets/images/logo.svg"
+										height="62"
+										width="151"
+										alt="boat logo"
+									/>
 								</a>
-							</div>
-						</div>
-					</div>
+							</section>
 
-					<!-- ---Right icons side --  -->
-					<div
-						class="flex items-center gap-3 right-side md:grow md:justify-end"
-					>
-						<!-- -------- Search bar for large and above screen-------- -->
-						<div class="hidden search-bar w-80 lg:flex">
-							<div
-								class="wrapper flex bg-[#EFF4F7] rounded-3xl px-4 w-full relative"
-							>
-								<span class="">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										class="w-6 icon icon-tabler icon-tabler-search"
-										width="44"
-										height="44"
-										viewBox="0 0 24 24"
-										stroke-width="1.5"
-										stroke="#2c3e50"
-										fill="none"
-										stroke-linecap="round"
-										stroke-linejoin="round"
-									>
-										<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-										<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-										<path d="M21 21l-6 -6" />
-									</svg>
-								</span>
-								<input
-									class="text-base b-0 outline-none bg-[#EFF4F7] text-black rounded-r-3xl px-2 grow w-full placeholder:text-black"
-									type="text"
-									placeholder="Search Speakers"
-								/>
-								<!-- <span class="absolute text-base top-2 left-11">Search <b>Speakers</b></span> -->
-							</div>
-						</div>
-						<!-- ------search icon---- -->
-						<a href="#" class="md:hidden">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="w-6 icon icon-tabler icon-tabler-search"
-								width="44"
-								height="44"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="#2c3e50"
-								fill="none"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-								<path d="M21 21l-6 -6" />
-							</svg>
-						</a>
-						<!-- ------ User icon----- -->
-						<a href="#" class="hidden w-6 md:flex">
-							<img
-								src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Profile-1.png?v=1663762989"
-								alt=""
-								srcset=""
-							/>
-						</a>
-						<!-- -----shopping bag icon----  -->
-						<a href="#" class="">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								class="icon icon-tabler icon-tabler-shopping-bag w-7"
-								width="44"
-								height="44"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="#2c3e50"
-								fill="none"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-								<path
-									d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z"
-								/>
-								<path d="M9 11v-5a3 3 0 0 1 6 0v5" />
-							</svg>
-						</a>
-					</div>
-				</nav>
-				<!-- -------- Search bar just for medium screen-------- -->
-				<div class="hidden mb-5 md:flex lg:hidden">
-					<div class="mx-auto search-bar w-80">
-						<div
-							class="wrapper flex bg-[#EFF4F7] rounded-3xl px-4 w-full relative"
-						>
-							<span class="">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									class="w-6 icon icon-tabler icon-tabler-search"
-									width="44"
-									height="44"
-									viewBox="0 0 24 24"
-									stroke-width="1.5"
-									stroke="#2c3e50"
-									fill="none"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+							<!-- Links section -->
+							<section class="hidden xl:flex gap-x-4">
+								<!-- Categories -->
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] gap-x-2 hover:font-bold"
 								>
-									<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-									<path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-									<path d="M21 21l-6 -6" />
-								</svg>
-							</span>
-							<input
-								class="text-base b-0 outline-none bg-[#EFF4F7] text-black rounded-r-3xl px-2 grow w-full placeholder:text-black"
-								type="text"
-								placeholder="Search Speakers"
+									<p>Categories</p>
+									<svg
+										style="rotate: 90deg !important"
+										focusable="false"
+										width="7"
+										height="10"
+										class="icon icon--dropdown-arrow-right icon--direction-aware"
+										viewBox="0 0 7 10"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+
+								<!-- Daily Deals -->
+								<a
+									href="/deals.html"
+									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+								>
+									<p>Daily Deals</p>
+								</a>
+
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+								>
+									<p>Gift with boAt</p>
+								</a>
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] hover:font-bold"
+								>
+									<p>Bulk Orders</p>
+								</a>
+								<a
+									href=""
+									class="flex items-center duration-300 after:content-[border w-2] gap-x-2 hover:font-bold"
+								>
+									<p>More</p>
+									<svg
+										style="rotate: 90deg !important"
+										focusable="false"
+										width="7"
+										height="10"
+										class="icon icon--dropdown-arrow-right icon--direction-aware"
+										viewBox="0 0 7 10"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+							</section>
+						</div>
+
+						<!-- Right Section -->
+						<section
+							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto"
+						>
+							<div class="justify-center hidden w-full xl:flex">
+								<div class="relative">
+									<input
+										class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto"
+										type="text"
+										placeholder="Search"
+									/>
+									<!-- <div
+										class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+									>
+										<p>Search <span class="font-bold">"Earphones"</span></p>
+										<p>Search <span class="font-bold">"Smartwatches"</span></p>
+										<p>Search <span class="font-bold">"Speakers"</span></p>
+									</div> -->
+								</div>
+							</div>
+							<img
+								class="w-5 h-5 header-smaller-tablet:hidden"
+								src="./assets/images/search.webp"
+								alt="Search icon"
 							/>
-							<!-- <span class="absolute text-base top-2 left-11">Search <b>Speakers</b></span> -->
+							<img
+								class="hidden header-smaller-tablet:block h-[22px] w-[22px]"
+								src="./assets/images/profile.webp"
+								alt="User Profile"
+							/>
+							<img src="./assets/images/bag.svg" alt="Shopping bag" />
+						</section>
+					</div>
+					<!-- Search Bar -->
+					<div class="justify-center hidden w-full md:flex xl:hidden">
+						<div class="relative">
+							<input
+								class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto"
+								type="text"
+							/>
+							<!-- <div
+								class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+							>
+								<p>Search <span class="font-bold">"Earphones"</span></p>
+								<p>Search <span class="font-bold">"Smartwatches"</span></p>
+								<p>Search <span class="font-bold">"Speakers"</span></p>
+							</div> -->
 						</div>
 					</div>
 				</div>
-			</div>
-		</header>
+			</nav>
 
-		<div class="my-4 navigation-bar">
+		<div class="my-4 navigation-bar mx-5">
 			<span class="mx-4 text-xs">Home <code> > </code> Daily-Deals</span>
 		</div>
 
-		<div class="p-2 mx-2 my-1 timer w-72">
+		<div class="p-2 my-1 mx-6 timer w-72">
 			<h3 class="text-2xl font-extrabold">Daily Deals</h3>
 			<div
 				class="flex items-center p-2 font-normal bg-yellow-400 rounded time flash-sale"
@@ -239,7 +211,7 @@
 			</div>
 		</div>
 
-		<div class="flex justify-between p-4 my-6 filters">
+		<div class="flex justify-between p-4 my-6 filters mx-4">
 			<button
 				class="flex items-center gap-2 px-6 py-3 text-base font-bold bg-gray-100 rounded-md hover:bg-slate-200"
 			>
@@ -319,8 +291,8 @@
 		</div>
 
 		<!-- cards containers -->
-		<div class="cards-container grid lg:grid-cols-3 gap-4 p-3">
-			<div class="card">
+		<div class="cards-container grid lg:grid-cols-3 gap-4 p-3 md:grid-cols-2 mx-3">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<span
 						class="badge"
@@ -341,7 +313,7 @@
 						6 Hourse Playback
 					</div>
 				</div>
-				<div class=" relative w-full p-1 products-info">
+				<div class="relative w-full p-1 products-info">
 
 					<span class="flex items-center gap-1">
 						<svg
@@ -412,11 +384,10 @@
 
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs rounded-full fea"
 							>IWP Technology</small
 						>
 					</div>
@@ -430,8 +401,8 @@
 				</div>
 			</div>
 
+			<div class="details-card bg">
 
-			<div class="card">
 				<div class="p-1 img-container">
 					<span
 						class="badge"
@@ -525,11 +496,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs  rounded-full fea"
 							>IWP Technology</small
 						>
 					</div>
@@ -541,7 +511,7 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<img
 						src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/rockerz_ea76e8ff-d95c-49da-b6c9-fca4304dce11.jpg?v=1685686978"
@@ -621,11 +591,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -637,7 +606,7 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<span
 						class="badge"
@@ -726,11 +695,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -742,7 +710,7 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<img
 						src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Airdopes-115_1.jpg?v=1686139410"
@@ -803,7 +771,7 @@
 						<div class="price">
 							<h3 class="text-lg font-bold">
 
-								₹1399n
+								₹1399
 								<span class="text-xs font-medium text-gray-500 line-through"
 									>₹2,990</span
 								>
@@ -825,11 +793,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -841,7 +808,7 @@
 				</div>
 			</div>
 
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<span
 						class="badge"n
@@ -929,11 +896,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -944,7 +910,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<img
 						src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/191G_1.gif?v=1686650191"
@@ -1026,11 +992,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -1042,7 +1007,7 @@
 				</div>
 			</div>
       
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<img
 						src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Atom_81.jpg?v=1688452928"
@@ -1124,11 +1089,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -1140,7 +1104,7 @@
 				</div>
 			</div>
       
-			<div class="card">
+			<div class="details-card bg">
 				<div class="p-1 img-container">
 					<span
 						class="badge"
@@ -1228,11 +1192,10 @@
 					</div>
 					<div class="my-2 features">
 						<small
-							class="p-1 text-xs rounded-full"
-							style="background-color: #eff4f7"
+							class="p-1 text-xs rounded-full fea"
 							>13mm drivers</small
 						>
-						<small class="p-1 text-xs bg-gray-200 rounded-full"
+						<small class="p-1 text-xs fea rounded-full"
 							>IWP Technology</small
 						>
 					</div>
@@ -1244,5 +1207,35 @@
 				</div>
 			</div>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="./slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.carousel').slick({
+					slidesToShow: 1,
+					autoplay: true,
+					adaptiveHeight: true,
+					arrows: true,
+					dots: true,
+					responsive: [
+						{
+							breakpoint: 1000,
+							settings: {
+								arrows: false,
+							},
+						},
+					],
+				}),
+					$('.text-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						vertical: true,
+						arrows: false,
+						dots: false,
+						speed: 1500,
+					})
+			})
+		</script>
 	</body>
 </html>
