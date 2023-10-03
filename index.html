@@ -26,6 +26,10 @@
 
 		<!-- Custom CSS -->
 		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
 			.scrollbar-hide::-webkit-scrollbar {
 				display: none;
 			}
@@ -36,6 +40,10 @@
 				/* IE and Edge */
 				scrollbar-width: none;
 				/* Firefox */
+			}
+
+			#categoryList {
+				display: none;
 			}
 		</style>
 		<!-- custom style by saiful -->
@@ -66,6 +74,167 @@
 				<div class="flex flex-col items-center justify-center h-full">
 					<!-- Top Section -->
 					<div class="flex justify-between w-full px-3 py-4 mx-auto md:px-10">
+						<!-- Category hover menu -->
+						<ul
+							class="bg-white p-5 top-[84px] absolute w-[94%]"
+							id="categoryList"
+						>
+							<div class="flex flex-wrap mx-auto gap-y-2">
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-1.webp"
+										alt="True Wireless Earbuds"
+									/>
+									<p class="text-xs font-medium">True Wireless Earbuds</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-2.webp"
+										alt="Neckbands"
+									/>
+									<p class="text-xs font-medium">Neckbands</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-3.webp"
+										alt="Smartwatches"
+									/>
+									<p class="text-xs font-medium">Smartwatches</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-5.webp"
+										alt="Wireless Speakers"
+									/>
+									<p class="text-xs font-medium">Wireless Speakers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-6.webp"
+										alt="Wired Headphones"
+									/>
+									<p class="text-xs font-medium">Wired Headphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-7.webp"
+										alt="Wired Earphones"
+									/>
+									<p class="text-xs font-medium">Wired Earphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-8.webp"
+										alt="Soundbars"
+									/>
+									<p class="text-xs font-medium">Soundbars</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-9.webp"
+										alt="Gaming Headphones"
+									/>
+									<p class="text-xs font-medium">Gaming Headphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-10.webp"
+										alt="Party Speakers"
+									/>
+									<p class="text-xs font-medium">Party Speakers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-11.webp"
+										alt="Trimmers"
+									/>
+									<p class="text-xs font-medium">Trimmers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-12.webp"
+										alt="Chargers"
+									/>
+									<p class="text-xs font-medium">Chargers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-13.webp"
+										alt="Power Banks"
+									/>
+									<p class="text-xs font-medium">Power Banks</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-14.webp"
+										alt="Cables"
+									/>
+									<p class="text-xs font-medium">Cables</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-15.webp"
+										alt="Car Accessories"
+									/>
+									<p class="text-xs font-medium">Car Accessories</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/superhero.webp"
+										alt="Superhero Collection"
+									/>
+									<p class="text-xs font-medium">Superhero Collection</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-16.webp"
+										alt="Trebel for Women"
+									/>
+									<p class="text-xs font-medium">Trebel for Women</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-17.webp"
+										alt="Limited Editions"
+									/>
+									<p class="text-xs font-medium">Limited Editions</p>
+								</li>
+							</div>
+						</ul>
 						<!-- Left Section for mobile + tablet -->
 						<div class="flex gap-12">
 							<section class="flex items-center gap-5 w-[85px] xl:hidden">
@@ -91,6 +260,7 @@
 								<a
 									href="#"
 									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+									id="categoryOption"
 								>
 									<p>Categories</p>
 									<svg
@@ -5053,7 +5223,15 @@
 						adaptiveHeight: true,
 						arrows: true,
 						dots: true,
-					})
+					}),
+					$('#categoryList, #categoryOption').hover(
+						function () {
+							$('#categoryList').show()
+						},
+						function () {
+							$('#categoryList').hide(1500)
+						}
+					)
 			})
 		</script>
 
