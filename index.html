@@ -49,6 +49,10 @@
 			#loginCard {
 				display: none;
 			}
+
+			#menuCard {
+				display: none;
+			}
 		</style>
 		<!-- custom style by saiful -->
 		<link rel="stylesheet" href="customStyleBySaiful.css" />
@@ -75,6 +79,137 @@
 			<nav
 				class="sticky top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
 			>
+				<!-- Menu in mobile -->
+				<div
+					class="h-[calc(100vh-87px)] overflow-y-scroll bg-white p-4 w-[95%] top-[54px] absolute z-20"
+					id="menuCard"
+				>
+					<!-- Categories -->
+					<div class="p-4 border rounded-xl bg-[#f8f9fa]">
+						<div class="flex justify-between">
+							<h2 class="font-bold">Categories</h2>
+							<span class="font-bold text-[#8b8b8b]">—</span>
+						</div>
+						<div class="flex flex-wrap justify-between mt-8 gap-y-4">
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-1.webp"
+									alt="True Wireless Earbuds"
+								/>
+								<p class="text-xs text-center">True Wireless Earbuds</p>
+							</div>
+							<div class="w-[30%]">
+								<img src="./assets/images/category-d-2.webp" alt="Neckbands" />
+								<p class="text-xs text-center">Neckbands</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-3.webp"
+									alt="Smart Watches"
+								/>
+								<p class="text-xs text-center">Smart Watches</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-4.webp"
+									alt="Wireless Headphones"
+								/>
+								<p class="text-xs text-center">Wireless Headphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-5.webp"
+									alt="Wireless Speakers"
+								/>
+								<p class="text-xs text-center">Wireless Speakers</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-6.webp"
+									alt="Wired Headphones"
+								/>
+								<p class="text-xs text-center">Wired Headphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-7.webp"
+									alt="Wired Earphones"
+								/>
+								<p class="text-xs text-center">Wired Earphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img src="./assets/images/category-d-8.webp" alt="Soundbars" />
+								<p class="text-xs text-center">Soundbars</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-9.webp"
+									alt="Gaming Headphones"
+								/>
+								<p class="text-xs text-center">Gaming Headphones</p>
+							</div>
+						</div>
+						<p
+							class="flex items-center justify-center gap-2 mt-6 font-bold text-center text-button-blue"
+						>
+							Expand More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="14"
+								height="14"
+								viewBox="0 0 14 14"
+							>
+								<path
+									id="Path_337386"
+									data-name="Path 337386"
+									d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+									transform="translate(-1.155 11.307)"
+									fill="#2f5b96"
+								></path>
+							</svg>
+						</p>
+					</div>
+
+					<!-- Links -->
+					<div class="flex flex-col px-4 mt-6 gap-y-8">
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="deals.html"
+						>
+							<p>Daily Deals</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="gift_with_boat.html"
+						>
+							<p>Gift with boAt</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="mailto:nirzonk47@gmail.com?subject=Feedback"
+						>
+							<p>Bulk Orders</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="blogs.html"
+						>
+							<p>Blogs</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="index.html"
+						>
+							<p>Track your order</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+					</div>
+				</div>
+
 				<div class="flex flex-col items-center justify-center h-full">
 					<!-- Top Section -->
 					<div class="flex justify-between w-full px-3 py-4 mx-auto md:px-10">
@@ -244,10 +379,11 @@
 							<section class="flex items-center gap-5 w-[85px] xl:hidden">
 								<img
 									class="h-[14px] cursor-pointer"
+									id="menuButton"
 									src="./assets/images/hamburger-icon.png"
 									alt="burger menu icon"
 								/>
-								<a href="" class="md:hidden">
+								<a href="index.html" class="md:hidden">
 									<img
 										class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
 										src="./assets/images/logo.svg"
@@ -418,6 +554,8 @@
 					</div>
 				</div>
 			</nav>
+
+			<div></div>
 
 			<!-- Carousel using Slick -->
 			<div class="mb-[25px] z-10">
@@ -5160,7 +5298,7 @@
 
 		<!-- Bottom Navbar for mobile -->
 		<div
-			class="fixed bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden"
+			class="fixed bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden z-10"
 		>
 			<div class="flex justify-evenly">
 				<div
@@ -5265,6 +5403,9 @@
 				})
 				$('#closeCard').click(function () {
 					$('#loginCard').toggle('slow')
+				})
+				$('#menuButton').click(function () {
+					$('#menuCard').toggle('slow')
 				})
 			})
 		</script>
