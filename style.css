@@ -2065,6 +2065,11 @@ video {
   padding-bottom: 6px !important;
 }
 
+.py-\[4px\] {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
 .pb-2 {
   padding-bottom: 0.5rem !important;
 }
@@ -2357,6 +2362,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
+.text-boat-red {
+  --tw-text-opacity: 1 !important;
+  color: rgb(216 51 51 / var(--tw-text-opacity)) !important;
+}
+
 .underline {
   text-decoration-line: underline !important;
 }
@@ -2566,6 +2576,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:-left-\[4rem\] {
+    left: -4rem !important;
+  }
+
+  .md\:top-\[6rem\] {
+    top: 6rem !important;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px !important;
   }
@@ -2628,6 +2646,10 @@ video {
 
   .md\:w-full {
     width: 100% !important;
+  }
+
+  .md\:w-\[150\%\] {
+    width: 150% !important;
   }
 
   .md\:auto-cols-\[35vw\] {
@@ -2767,6 +2789,14 @@ video {
 }
 
 @media (min-width: 1200px) {
+  .xl\:left-\[10rem\] {
+    left: 10rem !important;
+  }
+
+  .xl\:top-\[3\.5rem\] {
+    top: 3.5rem !important;
+  }
+
   .xl\:order-\[-1\] {
     order: -1 !important;
   }
@@ -2789,6 +2819,10 @@ video {
 
   .xl\:w-auto {
     width: auto !important;
+  }
+
+  .xl\:w-1\/2 {
+    width: 50% !important;
   }
 
   .xl\:justify-between {
