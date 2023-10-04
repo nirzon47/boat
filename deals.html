@@ -45,6 +45,10 @@
 			#categoryList {
 				display: none;
 			}
+
+			#loginCard {
+				display: none;
+			}
 		</style>
 		<!-- custom style by saiful -->
 		<link rel="stylesheet" href="customStyleBySaiful.css" />
@@ -52,8 +56,8 @@
 
 	<body class="antialiased font-metropolis">
 		<!-- Entire Page content -->
-		<div class="relative w-screen h-screen overflow-x-hidden">
-			<!-- sidebar  menu -->
+		<div class="w-screen h-screen overflow-x-hidden">
+			<!-- side bar -->
 			<div class="absolute hidden w-screen h-screen overlay"></div>
 			<div
 				class="sidebar w-[400px] bg-white h-screen absolute translate-x-[-400px] transition duration-1000 ease-in-out"
@@ -148,41 +152,41 @@
 						>
 					</div>
 					<div class="flex flex-col gap-4 pr-3 right h-1/2">
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm">Cabels</span
 							><span class="text-gray-500">(3)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm">Charger</span
 							><span class="text-gray-500">(1)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm"
 								>Gaming EarBuds</span
 							><span class="text-gray-500">(1)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm">Neckbends</span
 							><span class="text-gray-500">(14)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm"
 								>Party Speakers</span
 							><span class="text-gray-500">(1)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm">Smart Watches</span
 							><span class="text-gray-500">(29)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm">Soundbars</span
 							><span class="text-gray-500">(1)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm">Wire Earbud</span
 							><span class="text-gray-500">(23)</span>
 						</div>
-						<div class="flex gap-2">
+						<div class="flex items-center gap-2">
 							<input type="checkbox" /><span class="text-sm"
 								>Wirless Speaker</span
 							><span class="text-gray-500">(3)</span>
@@ -216,7 +220,7 @@
 
 			<!-- Top Navbar -->
 			<nav
-				class="fixed right-0 w-full top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
+				class="sticky top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
 			>
 				<div class="flex flex-col items-center justify-center h-full">
 					<!-- Top Section -->
@@ -445,7 +449,7 @@
 
 								<!-- Bulk Orders -->
 								<a
-									href=""
+									href="mailto:nirzonk47@gmail.com?subject=Feedback"
 									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
 								>
 									<p>Bulk Orders</p>
@@ -478,7 +482,7 @@
 
 						<!-- Logo for tablet + -->
 						<section class="hidden md:inline-block xl:order-[-1]">
-							<a href="">
+							<a href="index.html">
 								<img
 									class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
 									src="./assets/images/logo.svg"
@@ -491,7 +495,7 @@
 
 						<!-- Right Section -->
 						<section
-							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto"
+							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto relative"
 						>
 							<div class="justify-center hidden w-full xl:flex">
 								<div class="relative">
@@ -517,12 +521,30 @@
 								class="hidden header-smaller-tablet:block h-[22px] w-[22px] cursor-pointer"
 								src="./assets/images/profile.webp"
 								alt="User Profile"
+								id="login"
 							/>
 							<img
 								class="cursor-pointer"
 								src="./assets/images/bag.svg"
 								alt="Shopping bag"
 							/>
+							<!-- Login Card -->
+							<div
+								class="absolute p-[10px] bg-white border-2 xl:top-[3.5rem] text-boat-red xl:w-1/2 rounded md:w-[150%] md:top-[6rem] md:-left-[4rem] xl:left-[10rem]"
+								id="loginCard"
+							>
+								<div
+									class="font-bold text-[14px] w-full flex justify-between items-center"
+								>
+									<p>Hi boAtHead</p>
+									<span class="text-3xl cursor-pointer" id="closeCard">×</span>
+								</div>
+								<button
+									class="w-full text-white bg-boat-red font-bold text-[14px] py-[4px] mt-4"
+								>
+									Login
+								</button>
+							</div>
 						</section>
 					</div>
 					<!-- Search Bar -->
@@ -543,12 +565,12 @@
 					</div>
 				</div>
 			</nav>
-
 			<!-- Body -->
 
 			<div class="mx-5 my-4 navigation-bar">
 				<span class="mx-4 text-xs">Home <code> > </code> Daily-Deals</span>
 			</div>
+
 			<!-- navigation for go to home page -->
 			<div class="p-2 mx-6 my-1 timer w-72">
 				<h3 class="text-2xl font-extrabold">Daily Deals</h3>
@@ -2063,7 +2085,6 @@
 					</div>
 				</div>
 			</div>
-			<!-- endind card section here -->
 
 			<!-- ----Footer Section Start form here -----  -->
 			<footer class="footer">
@@ -3614,6 +3635,7 @@
 		</div>
 
 		<!-- Script for Slick carousel -->
+		<!-- Script for Slick carousel -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script type="text/javascript" src="./slick/slick.min.js"></script>
 		<script>
@@ -3648,15 +3670,24 @@
 						arrows: true,
 						dots: false,
 					}),
-					$('#categoryList,  #categoryOption').hover(
+					// function for the desktop category list
+					$('#categoryList, #categoryOption').hover(
 						function () {
 							$('#categoryList').show()
 						},
 						function () {
-							$('#categoryList').hide(1500)
+							$('#categoryList').hide(1000)
 						}
 					)
+				$('#login').click(function () {
+					$('#loginCard').toggle('slow')
+				})
+				$('#closeCard').click(function () {
+					$('#loginCard').toggle('slow')
+				})
 			})
+
+			// own script to side bar
 
 			const time = document.querySelector('.time-container')
 			setInterval(() => {
