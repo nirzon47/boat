@@ -740,10 +740,6 @@ video {
   margin-bottom: 0.75rem !important;
 }
 
-.mb-36 {
-  margin-bottom: 9rem !important;
-}
-
 .mb-4 {
   margin-bottom: 1rem !important;
 }
@@ -2341,6 +2337,24 @@ video {
 .overlay{
   z-index: 998;
   background-color: rgba(0,0,0,0.4);
+}
+
+/* adding animation for timer */
+
+.time-container{
+  position: relative;
+  animation: move 1s linear infinite;
+  background: radial-gradient(circle at center, rgba(76, 75, 75, 0.2) 0%, rgba(251,197,10,1) 90%);
+}
+
+@keyframes move {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 512px 512px;
+  }
 }
 
 .hover\:bg-\[\#ecf0f4\]:hover {

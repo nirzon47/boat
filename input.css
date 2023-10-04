@@ -28,6 +28,18 @@
 	z-index: 998;
 	background-color: rgba(0,0,0,0.4);
 }
+/* adding animation for timer */
+.time-container{
+	position: relative;
+	animation: move 1s linear infinite;
+   background: radial-gradient(circle at center, rgba(76, 75, 75, 0.2) 0%, rgba(251,197,10,1) 90%);
+}
+
+@keyframes move {
+	from { background-position: 0 0; }
+    to { background-position: 512px 512px; }
+}
+
 
 @layer base {
 	@font-face {
