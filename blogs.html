@@ -1,205 +1,2378 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boAt blogs</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Slick CSS -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>boAt blogs</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.ico"
+			type="image/x-icon"
+		/>
+		<!-- ----Fontawesome icons kit----- -->
+		<script
+			src="https://kit.fontawesome.com/6604ef9bb8.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Tailwind Output CSS File -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="dist/output.css" />
+
+		<!-- Slick CSS -->
 		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
 		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
 
 		<!-- Custom CSS -->
 		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
 			.scrollbar-hide::-webkit-scrollbar {
 				display: none;
 			}
 
 			/* For IE, Edge and Firefox */
 			.scrollbar-hide {
-				-ms-overflow-style: none; /* IE and Edge */
-				scrollbar-width: none; /* Firefox */
+				-ms-overflow-style: none;
+				/* IE and Edge */
+				scrollbar-width: none;
+				/* Firefox */
+			}
+
+			#categoryList {
+				display: none;
+			}
+
+			#loginCard {
+				display: none;
+			}
+
+			#menuCard {
+				display: none;
 			}
 		</style>
-</head>
-<body>
-    <nav></nav>
-    <section class="overflow-x-hidden">
-        <img class="w-11 rounded-full fixed right-3 bottom-2" src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Chat-Icon.jpg?v=1690367119" alt="">
-        <!--First carosel-->
-        <div>
-        <div class="carousel w-screen md:hidden">
-            <div>
-     <img class="w-screen md:hidden" src="https://www.boat-lifestyle.com/cdn/shop/files/News_mobile_851d1a00-ec8d-4815-8d5c-0b65d29e2c91_600x.png?v=1688372087" alt="">
-    </div>
-    <div>
-     <img class="w-screen md:hidden" src="https://www.boat-lifestyle.com/cdn/shop/files/AD115_47750039-5439-4f4b-9f68-a7a69d0fc3d3_600x.png?v=1687717968" alt="">
-    </div>
-    </div>
- </div>
+		<!-- custom style by saiful -->
+		<link rel="stylesheet" href="customStyleBySaiful.css" />
+	</head>
+	<body class="antialiased font-metropolis">
+		<!-- Body Content -->
+		<section class="w-screen h-screen overflow-x-hidden">
+			<section
+				class="h-[38px] px-[20px] text-center flex items-center justify-center bg-announcement"
+			>
+				<a>
+					<p
+						class="text-[11px] md:text-xs px-[22px] py-2 font-medium leading-none"
+					>
+						Getting you the power of good sound. <b>boAtxMarvel</b> is Live.
+						Grab Now!
+					</p>
+				</a>
+			</section>
 
-<!--First carosel for width is greater than md-->
-<div>
-    <div class="hidden md:block carousel w-screen object-cover">
-        <div> 
- <img class="w-screen object-cover" src="https://www.boat-lifestyle.com/cdn/shop/files/blog_banners-min_1600x.png?v=1689063992" alt="">
-</div>
-<div>
- <img class="w-screen object-cover" src="https://www.boat-lifestyle.com/cdn/shop/files/AD115_Desktop_1440x.png?v=1687717954" alt="">
-</div>
-</div>
+			<!-- Top Navbar -->
+			<nav
+				class="sticky top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
+			>
+				<!-- Menu in mobile -->
+				<div
+					class="h-[calc(100vh-87px)] overflow-y-scroll bg-white p-4 w-[95%] top-[54px] absolute z-20"
+					id="menuCard"
+				>
+					<!-- Categories -->
+					<div class="p-4 border rounded-xl bg-[#f8f9fa]">
+						<div class="flex justify-between">
+							<h2 class="font-bold">Categories</h2>
+							<span class="font-bold text-[#8b8b8b]">—</span>
+						</div>
+						<div class="flex flex-wrap justify-between mt-8 gap-y-4">
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-1.webp"
+									alt="True Wireless Earbuds"
+								/>
+								<p class="text-xs text-center">True Wireless Earbuds</p>
+							</div>
+							<div class="w-[30%]">
+								<img src="./assets/images/category-d-2.webp" alt="Neckbands" />
+								<p class="text-xs text-center">Neckbands</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-3.webp"
+									alt="Smart Watches"
+								/>
+								<p class="text-xs text-center">Smart Watches</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-4.webp"
+									alt="Wireless Headphones"
+								/>
+								<p class="text-xs text-center">Wireless Headphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-5.webp"
+									alt="Wireless Speakers"
+								/>
+								<p class="text-xs text-center">Wireless Speakers</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-6.webp"
+									alt="Wired Headphones"
+								/>
+								<p class="text-xs text-center">Wired Headphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-7.webp"
+									alt="Wired Earphones"
+								/>
+								<p class="text-xs text-center">Wired Earphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img src="./assets/images/category-d-8.webp" alt="Soundbars" />
+								<p class="text-xs text-center">Soundbars</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-9.webp"
+									alt="Gaming Headphones"
+								/>
+								<p class="text-xs text-center">Gaming Headphones</p>
+							</div>
+						</div>
+						<p
+							class="flex items-center justify-center gap-2 mt-6 font-bold text-center text-button-blue"
+						>
+							Expand More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="14"
+								height="14"
+								viewBox="0 0 14 14"
+							>
+								<path
+									id="Path_337386"
+									data-name="Path 337386"
+									d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+									transform="translate(-1.155 11.307)"
+									fill="#2f5b96"
+								></path>
+							</svg>
+						</p>
+					</div>
 
-        <!--Trending-->
-        <div class="flex justify-between m-5">
-            <h1 class="text-2xl">Trending <span class="font-bold">Blo<span class="underline underline-offset-[6px] decoration-red-600">gs</span> </span> </h1>
-            <div class="flex">
-                <p class="text-sky-900">View All</p>
-                <svg class="ml-1 text-sky-900" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
-                    <path d="M16 12l-4 -4" />
-                    <path d="M16 12h-8" />
-                    <path d="M12 16l4 -4" />
-                  </svg>
-            </div>
-        </div>
-    <!--Trending cards-->
-     <div class="flex flex-col flex-wrap h-96 overflow-scroll scrollbar-hide">
-        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/1_1_600x.jpg?v=1695929892" alt="">
-            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-            <h1 class="font-bold">How Custom Watch Faces Enhance Your Daily Routine</h1>
-           <div class="flex justify-between">
-            <p class="text-slate-500">22 Sep, 2023</p> 
-            <p class="text-green-500">3 min read</p>
-         </div>
-        </div>
-        </div>
+					<!-- Links -->
+					<div class="flex flex-col px-4 mt-6 gap-y-8">
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="deals.html"
+						>
+							<p>Daily Deals</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="gift_with_boat.html"
+						>
+							<p>Gift with boAt</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="mailto:nirzonk47@gmail.com?subject=Feedback"
+						>
+							<p>Bulk Orders</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="blogs.html"
+						>
+							<p>Blogs</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="index.html"
+						>
+							<p>Track your order</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+					</div>
+				</div>
 
-        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/5_1_600x.jpg?v=1695894844" alt="">
-            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-            <h1 class="font-bold">Customising Your Smartwatch For Your Every Requirement</h1>
-           <div class="flex justify-between">
-            <p class="text-slate-500">21 Sep, 2023</p> 
-            <p class="text-green-500">5 min read</p>
-         </div>
-        </div>
-        </div>
+				<div class="flex flex-col items-center justify-center h-full">
+					<!-- Top Section -->
+					<div class="flex justify-between w-full px-3 py-4 mx-auto md:px-10">
+						<!-- Category hover menu -->
+						<ul
+							class="bg-white p-5 top-[84px] absolute w-[94%]"
+							id="categoryList"
+						>
+							<div class="flex flex-wrap mx-auto gap-y-2">
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-1.webp"
+										alt="True Wireless Earbuds"
+									/>
+									<p class="text-xs font-medium">True Wireless Earbuds</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-2.webp"
+										alt="Neckbands"
+									/>
+									<p class="text-xs font-medium">Neckbands</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-3.webp"
+										alt="Smartwatches"
+									/>
+									<p class="text-xs font-medium">Smartwatches</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-5.webp"
+										alt="Wireless Speakers"
+									/>
+									<p class="text-xs font-medium">Wireless Speakers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-6.webp"
+										alt="Wired Headphones"
+									/>
+									<p class="text-xs font-medium">Wired Headphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-7.webp"
+										alt="Wired Earphones"
+									/>
+									<p class="text-xs font-medium">Wired Earphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-8.webp"
+										alt="Soundbars"
+									/>
+									<p class="text-xs font-medium">Soundbars</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-9.webp"
+										alt="Gaming Headphones"
+									/>
+									<p class="text-xs font-medium">Gaming Headphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-10.webp"
+										alt="Party Speakers"
+									/>
+									<p class="text-xs font-medium">Party Speakers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-11.webp"
+										alt="Trimmers"
+									/>
+									<p class="text-xs font-medium">Trimmers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-12.webp"
+										alt="Chargers"
+									/>
+									<p class="text-xs font-medium">Chargers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-13.webp"
+										alt="Power Banks"
+									/>
+									<p class="text-xs font-medium">Power Banks</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-14.webp"
+										alt="Cables"
+									/>
+									<p class="text-xs font-medium">Cables</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-15.webp"
+										alt="Car Accessories"
+									/>
+									<p class="text-xs font-medium">Car Accessories</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/superhero.webp"
+										alt="Superhero Collection"
+									/>
+									<p class="text-xs font-medium">Superhero Collection</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-16.webp"
+										alt="Trebel for Women"
+									/>
+									<p class="text-xs font-medium">Trebel for Women</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-17.webp"
+										alt="Limited Editions"
+									/>
+									<p class="text-xs font-medium">Limited Editions</p>
+								</li>
+							</div>
+						</ul>
+						<!-- Left Section for mobile + tablet -->
+						<div class="flex gap-12">
+							<section class="flex items-center gap-5 w-[85px] xl:hidden">
+								<img
+									class="h-[14px] cursor-pointer"
+									id="menuButton"
+									src="./assets/images/hamburger-icon.png"
+									alt="burger menu icon"
+								/>
+								<a href="index.html" class="md:hidden">
+									<img
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
+										src="./assets/images/logo.svg"
+										height="62"
+										width="151"
+										alt="boat logo"
+									/>
+								</a>
+							</section>
 
-        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/6_600x.jpg?v=1695815684" alt="">
-            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-            <h1 class="font-bold">Cricket Training Goes High-tech: Revolutionising the Game...</h1>
-           <div class="flex justify-between">
-            <p class="text-slate-500">20 Sep, 2023</p> 
-            <p class="text-green-500">4 min read</p>
-         </div>
-        </div>
-        </div>
+							<!-- Links section -->
+							<section class="hidden xl:flex gap-x-7">
+								<!-- Categories -->
+								<a
+									href="#"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+									id="categoryOption"
+								>
+									<p>Categories</p>
+									<svg
+										style="rotate: 90deg !important"
+										focusable="false"
+										width="7"
+										height="10"
+										class="icon icon--dropdown-arrow-right icon--direction-aware"
+										viewBox="0 0 7 10"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
 
-        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/banner_600x.png?v=1688023063" alt="">
-            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-            <h1 class="font-bold">boAt's First Dolby Power Neckband with Hybrid ANC Feature...</h1>
-           <div class="flex justify-between">
-            <p class="text-slate-500">11 Jul, 2023</p> 
-            <p class="text-green-500">5 min read</p>
-         </div>
-        </div>
-        </div>
+								<!-- Daily Deals -->
+								<a
+									href="./deals.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Daily Deals</p>
+								</a>
 
-        <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-            <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/blog_banner_street_fashion_1_600x.png?v=1684135161" alt="">
-            <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-            <h1 class="font-bold">The Sidewalk Runway</h1>
-           <div class="flex justify-between">
-            <p class="text-slate-500">15 May, 2023</p> 
-            <p class="text-green-500">4 min read</p>
-         </div>
-        </div>
-        </div>
-   
-    </div>
-    <!--News-->
-        <div class="flex justify-between m-5">
-            <h1 class="text-2xl">Latest <span class="font-bold">Ne<span class="underline decoration-red-600">ws</span> </span> </h1>
-            <div class="flex">
-                <p class="text-sky-900">View All</p>
-                <svg class="ml-1 text-sky-900" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
-                    <path d="M16 12l-4 -4" />
-                    <path d="M16 12h-8" />
-                    <path d="M12 16l4 -4" />
-                  </svg>
-            </div>
-        </div>
+								<!-- Gift with boAt -->
+								<a
+									href="./gift_with_boat.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Gift with boAt</p>
+								</a>
 
-        <!--News cards start from here-->
-        <div class="flex flex-col flex-wrap h-96 overflow-scroll scrollbar-hide">
-            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/blog_banner1_600x.png?v=1676377102" alt="">
-                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-                <h1 class="font-bold">Social Welfare Initiatives 2022 - A Look Back</h1>
-               <div class="flex justify-between">
-                <p class="text-slate-500">15 Feb, 2023</p> 
-                <p class="text-green-500">3 min read</p>
-             </div>
-            </div>
-            </div>
-    
-            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/News_700x.png?v=1667822120" alt="">
-                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-                <h1 class="font-bold">Scaling Up With New Conviction: boAt Raises INR 500 Crore...</h1>
-               <div class="flex justify-between">
-                <p class="text-slate-500">07 Nov, 2022</p> 
-                <p class="text-green-500">3 min read</p>
-             </div>
-            </div>
-            </div>
-    
-            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/Blog-1_700x.jpg?v=1664539128" alt="">
-                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-                <h1 class="font-bold">Imagine Marketing India Ranked Amongst The Top 5 Wearable...</h1>
-               <div class="flex justify-between">
-                <p class="text-slate-500">30 Sep, 2022</p> 
-                <p class="text-green-500">2 min read</p>
-             </div>
-            </div>
-            </div>
-    
-            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/News-Banner-png_700x.png?v=1655731912" alt="">
-                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-                <h1 class="font-bold">boAt And DC Comics Collaborate to Launch New Audiowear De...</h1>
-               <div class="flex justify-between">
-                <p class="text-slate-500">20 Jun, 2022</p> 
-                <p class="text-green-500">1 min read</p>
-             </div>
-            </div>
-            </div>
-    
-            <div class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]">
-                <img class="w-full h-3/4  rounded-t-xl" src="https://www.boat-lifestyle.com/cdn/shop/articles/img_174157_amanguptaandsameermehta_700x.jpg?v=1654850612" alt="">
-                <div class="p-3 w-full h-1/4 flex flex-col justify-between">
-                <h1 class="font-bold">The Bro Code - Meet The Sound Industry's New Disruptors</h1>
-               <div class="flex justify-between">
-                <p class="text-slate-500">05 May, 2022</p> 
-                <p class="text-green-500">7 min read</p>
-             </div>
-            </div>
-            </div>
-       
-        </div>
+								<!-- Bulk Orders -->
+								<a
+									href="mailto:nirzonk47@gmail.com?subject=Feedback"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Bulk Orders</p>
+								</a>
 
+								<!-- More -->
+								<a
+									href=""
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Blogs</p>
+								</a>
+							</section>
+						</div>
 
-    </section>
+						<!-- Logo for tablet + -->
+						<section class="hidden md:inline-block xl:order-[-1]">
+							<a href="index.html">
+								<img
+									class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
+									src="./assets/images/logo.svg"
+									height="62"
+									width="151"
+									alt="boat logo"
+								/>
+							</a>
+						</section>
 
-    <footer></footer>
-    <!-- Script for Slick carousel -->
+						<!-- Right Section -->
+						<section
+							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto relative"
+						>
+							<div class="justify-center hidden w-full xl:flex">
+								<div class="relative">
+									<input
+										class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto outline-none"
+										type="text"
+									/>
+									<div
+										class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+									>
+										<p>Search <span class="font-bold">"Earphones"</span></p>
+										<p>Search <span class="font-bold">"Smartwatches"</span></p>
+										<p>Search <span class="font-bold">"Speakers"</span></p>
+									</div>
+								</div>
+							</div>
+							<img
+								class="w-5 h-5 cursor-pointer header-smaller-tablet:hidden"
+								src="./assets/images/search.webp"
+								alt="Search icon"
+							/>
+							<img
+								class="hidden header-smaller-tablet:block h-[22px] w-[22px] cursor-pointer"
+								src="./assets/images/profile.webp"
+								alt="User Profile"
+								id="login"
+							/>
+							<img
+								class="cursor-pointer"
+								src="./assets/images/bag.svg"
+								alt="Shopping bag"
+							/>
+							<!-- Login Card -->
+							<div
+								class="absolute p-[10px] bg-white border-2 xl:top-[3.5rem] text-boat-red xl:w-1/2 rounded md:w-[150%] md:top-[6rem] md:-left-[4rem] xl:left-[10rem]"
+								id="loginCard"
+							>
+								<div
+									class="font-bold text-[14px] w-full flex justify-between items-center"
+								>
+									<p>Hi boAtHead</p>
+									<span class="text-3xl cursor-pointer" id="closeCard">×</span>
+								</div>
+								<button
+									class="w-full text-white bg-boat-red font-bold text-[14px] py-[4px] mt-4"
+								>
+									Login
+								</button>
+							</div>
+						</section>
+					</div>
+					<!-- Search Bar -->
+					<div class="justify-center hidden w-full md:flex xl:hidden">
+						<div class="relative">
+							<input
+								class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto"
+								type="text"
+							/>
+							<div
+								class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+							>
+								<p>Search <span class="font-bold">"Earphones"</span></p>
+								<p>Search <span class="font-bold">"Smartwatches"</span></p>
+								<p>Search <span class="font-bold">"Speakers"</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<img
+				class="fixed rounded-full w-11 right-3 bottom-2"
+				src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/Chat-Icon.jpg?v=1690367119"
+				alt=""
+			/>
+			<!--First carosel-->
+			<div>
+				<div class="w-screen saurabhCarousel md:hidden">
+					<div>
+						<img
+							class="w-screen md:hidden"
+							src="https://www.boat-lifestyle.com/cdn/shop/files/News_mobile_851d1a00-ec8d-4815-8d5c-0b65d29e2c91_600x.png?v=1688372087"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="w-screen md:hidden"
+							src="https://www.boat-lifestyle.com/cdn/shop/files/AD115_47750039-5439-4f4b-9f68-a7a69d0fc3d3_600x.png?v=1687717968"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!--First carosel for width is greater than md-->
+			<div>
+				<div class="hidden object-cover w-screen md:block saurabhCarousel">
+					<div>
+						<img
+							class="object-cover w-screen"
+							src="https://www.boat-lifestyle.com/cdn/shop/files/blog_banners-min_1600x.png?v=1689063992"
+							alt=""
+						/>
+					</div>
+					<div>
+						<img
+							class="object-cover w-screen"
+							src="https://www.boat-lifestyle.com/cdn/shop/files/AD115_Desktop_1440x.png?v=1687717954"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!--Trending-->
+			<div class="flex justify-between m-5">
+				<h1 class="text-2xl">
+					Trending
+					<span class="font-bold"
+						>Blo<span
+							class="underline underline-offset-[6px] decoration-red-600"
+							>gs</span
+						>
+					</span>
+				</h1>
+				<div class="flex">
+					<p class="text-sky-900">View All</p>
+					<svg
+						class="ml-1 text-sky-900"
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-circle-arrow-right"
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="#597e8d"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
+						<path d="M16 12l-4 -4" />
+						<path d="M16 12h-8" />
+						<path d="M12 16l4 -4" />
+					</svg>
+				</div>
+			</div>
+			<!--Trending cards-->
+			<div class="flex flex-col flex-wrap overflow-scroll h-96 scrollbar-hide">
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/1_1_600x.jpg?Morev=1695929892"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							How Custom Watch Faces Enhance Your Daily Routine
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">22 Sep, 2023</p>
+							<p class="text-green-500">3 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/5_1_600x.jpg?v=1695894844"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							Customising Your Smartwatch For Your Every Requirement
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">21 Sep, 2023</p>
+							<p class="text-green-500">5 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/6_600x.jpg?v=1695815684"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							Cricket Training Goes High-tech: Revolutionising the Game...
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">20 Sep, 2023</p>
+							<p class="text-green-500">4 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/banner_600x.png?v=1688023063"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							boAt's First Dolby Power Neckband with Hybrid ANC Feature...
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">11 Jul, 2023</p>
+							<p class="text-green-500">5 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/blog_banner_street_fashion_1_600x.png?v=1684135161"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">The Sidewalk Runway</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">15 May, 2023</p>
+							<p class="text-green-500">4 min read</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--News-->
+			<div class="flex justify-between m-5">
+				<h1 class="text-2xl">
+					Latest
+					<span class="font-bold"
+						>Ne<span class="underline decoration-red-600">ws</span>
+					</span>
+				</h1>
+				<div class="flex">
+					<p class="text-sky-900">View All</p>
+					<svg
+						class="ml-1 text-sky-900"
+						xmlns="http://www.w3.org/2000/svg"
+						class="icon icon-tabler icon-tabler-circle-arrow-right"
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="#597e8d"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+						<path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
+						<path d="M16 12l-4 -4" />
+						<path d="M16 12h-8" />
+						<path d="M12 16l4 -4" />
+					</svg>
+				</div>
+			</div>
+
+			<!--News cards start from here-->
+			<div
+				class="flex flex-col flex-wrap mb-6 overflow-scroll h-96 scrollbar-hide"
+			>
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/blog_banner1_600x.png?v=1676377102"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							Social Welfare Initiatives 2022 - A Look Back
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">15 Feb, 2023</p>
+							<p class="text-green-500">3 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/News_700x.png?v=1667822120"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							Scaling Up With New Conviction: boAt Raises INR 500 Crore...
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">07 Nov, 2022</p>
+							<p class="text-green-500">3 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/Blog-1_700x.jpg?v=1664539128"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							Imagine Marketing India Ranked Amongst The Top 5 Wearable...
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">30 Sep, 2022</p>
+							<p class="text-green-500">2 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/News-Banner-png_700x.png?v=1655731912"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							boAt And DC Comics Collaborate to Launch New Audiowear De...
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">20 Jun, 2022</p>
+							<p class="text-green-500">1 min read</p>
+						</div>
+					</div>
+				</div>
+
+				<div
+					class="mx-5 h-96 w-3/4 rounded-xl bg-gray-50 border border-slate-200 lg:w-[30%]"
+				>
+					<img
+						class="w-full h-3/4 rounded-t-xl"
+						src="https://www.boat-lifestyle.com/cdn/shop/articles/img_174157_amanguptaandsameermehta_700x.jpg?v=1654850612"
+						alt=""
+					/>
+					<div class="flex flex-col justify-between w-full p-3 h-1/4">
+						<h1 class="font-bold">
+							The Bro Code - Meet The Sound Industry's New Disruptors
+						</h1>
+						<div class="flex justify-between">
+							<p class="text-slate-500">05 May, 2022</p>
+							<p class="text-green-500">7 min read</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer">
+				<!-- ---footer first section  ----  -->
+				<div
+					class="footer-item-list bg-[#eff4f7] py-6 px-4 header-smaller-tablet:px-10 md:pt-8 items-start flex flex-wrap lg:justify-between"
+				>
+					<!-- --first column--- -->
+					<div class="w-full lg:w-[30%]">
+						<!-- logo -->
+						<div class="logo max-w-[150px] mx-auto w-full lg:mx-0 mb-4">
+							<a href="" class="">
+								<img
+									src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
+									alt="logo"
+									srcset=""
+								/>
+							</a>
+						</div>
+						<p
+							class="text[#293036] font-semibold text-2xl text-center lg:text-left mb-1"
+						>
+							Subscribe to our email alerts!
+						</p>
+						<div
+							class="input-box h-12 bg-white border border-[#e1e6eb] flex items-center justify-between rounded-xl"
+						>
+							<input
+								type="text"
+								class="w-11/12 px-3 text-sm outline-none lg:w-10/12"
+								placeholder="Enter you email address"
+							/>
+							<button class="flex items-center justify-center w-1/12">
+								<span
+									class="w-5 h-5 rounded-full border border-[#929ba2] flex justify-center items-center"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="9.27"
+										height="10"
+										class="h-2.5 align-middle"
+										viewBox="0 0 8.27 14.473"
+									>
+										<path
+											id="Path_340747"
+											data-name="Path 340747"
+											d="M.28.277a.961.961,0,0,1,1.349,0L7.991,6.569a.936.936,0,0,1,0,1.334L1.628,14.2a.961.961,0,0,1-1.349,0,.935.935,0,0,1,0-1.334L5.966,7.237.28,1.611A.935.935,0,0,1,.28.277Z"
+											fill="#868c91"
+											fill-rule="evenodd"
+										></path>
+									</svg>
+								</span>
+							</button>
+						</div>
+					</div>
+					<!-- right columns only for large or above screens--- -->
+					<div
+						class="box-border items-start justify-between w-8/12 mt-6 first-right-columns md:w-full lg:w-7/12 lg:mt-0 md:flex lg:pl-5"
+					>
+						<!-- right first column--- -->
+						<div class="footer__item w-3/12 md:w-4/12 xl:w-[30%]">
+							<p class="mb-3 text-sm font-semibold desktop_menu_link">Shop</p>
+
+							<div class="hidden footer__item-content md:block">
+								<ul
+									class="flex flex-wrap justify-between leading-4 list-none linklist"
+								>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">True Wireless Earbuds</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Wire Headphones</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Wired Headphones</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Wireless Speakers</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Home Audio</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Mobile Accessories</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Smart Watches</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">TRebel</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Misfit</a>
+									</li>
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Gift Card</a>
+									</li>
+
+									<li class="pt-2.5 w-[45%]">
+										<a href="" class="text-xs">Earn ₹100</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- right second column--- -->
+						<div class="footer__item w-3/12 xl:w-[30%]">
+							<p class="mb-3 text-sm font-semibold desktop_menu_link">Help</p>
+
+							<div class="hidden footer__item-content md:block">
+								<ul
+									class="flex flex-wrap justify-between leading-4 list-none linklist"
+								>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Track Your Orders</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Warranty & Supports</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Return Policy</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Service Centers</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Bulk Orders</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">FAQs</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Why Buy Direct</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- right third column--- -->
+						<div class="footer__item w-3/12 xl:w-[30%]">
+							<p class="mb-3 text-sm font-semibold desktop_menu_link">
+								Company
+							</p>
+
+							<div class="hidden footer__item-content md:block">
+								<ul
+									class="flex flex-wrap justify-between leading-4 list-none linklist"
+								>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">About boAt</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">News</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Read Our Blog</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Careers</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Security</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Investor Relations</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Social Responsibility</a>
+									</li>
+									<li class="pt-2.5 w-full">
+										<a href="" class="text-xs">Warranty Policy</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ---footer additional block section-- -->
+				<div
+					class="footer-additional-block bg-[#f7fafc] pt-10 px-4 header-smaller-tablet:px-10 md:pt-8"
+				>
+					<div class="wrapper w-full max-h-[1200px] flex flex-col flex-wrap">
+						<!-- True wireless Earbuds /Block-1 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								True Wireless Earbuds
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Noise Cancellation Earbuds</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Gaming Earbuds</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Large Playback Earbuds</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds Under 2000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds Under 3000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds Under 4000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds Under 5000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds Above 5000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- wireless Earphones /Block-2 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Wireless Earphones
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Noise Cancellation Earphones</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Gaming Earphones</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Large Playback Earphones</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 2000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 3000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 4000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 5000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Above 5000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Wired Earphones /Block-3 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Wired Earphones
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Noise Cancellation Earphones</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 500</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphones Under 1000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Wireless Headphones /Block-4 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Wireless Headphones
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Noise Cancellation Earphones</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Gaming Earphones</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Long Playback Earphones</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Headphones Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Headphones Under 2000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Headphones Under 3000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Headphones Under 4000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Headphones Above 4000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Wired Headphones /Block-5 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Wired Headphones
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wired Headphones with Mic</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Headphones with Mic for PC</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wired Headphones Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wired Headphones Under 2000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wired Headphones Under 3000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Gaming Headphones /Block-6 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Gaming Headphones
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Gaming Headphones with Mic</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Low Latency Headphones</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>RGB Light Headphones</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Headphones for PC Gaming</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Wireless Speakers /Block-7 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Wireless Speakers
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Portable Speakers</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Long Playback Speakers</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Waterproof Bluetooth Speakers</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Party Speakers with RGB Lights</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Speakers with Karaoke Mic</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Speakers Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Speakers Under 2000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Speakers Under 3000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Speakers Under 5000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Speakers Under 8000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Soundbars /Block-8 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Soundbars
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Dolby Soundbars</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar with Wireless Subwoofer</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar with Wired Subwoofer</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Alexa Enabled Soundbar</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Soundbar</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar Under 10000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar Under 20000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar Under 3000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar Under 5000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Soundbar Above 20000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Smart Watches /Block-8 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Smart Watches
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Bluetooth Calling Smartwatches</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>AMOLED Display Smartwatch</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Round Dial Smartwatch</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Fitness Tracker Smartwatch</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Sports Tracker Smartwatch</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Big Display Smartwatch</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Under 2000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Under 3000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Under 4000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Under 5000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Above 5000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Trimmers /Block-9 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Trimmers
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Grooming Kit for Men</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Beard Styler</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Trimmer for Men</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Trimmer Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Trimmer Under 2000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Limited Editions /Block-9 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Limited Editions
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Limited Edition Speakers</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Limited Edition Earbuds</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Limited Edition Smartwatch</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Limited Edition Earphone</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Limited Edition Headphones</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Car Accessories /Block-9 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Car Accessories
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Car Charger</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Aux Cable for Car</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Car Charger Under 500</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Car Charger Above 500</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Trebel Range /Block-10 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Trebel Range
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch for Women</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earbuds for Women</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Neckband for Women</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Earphone for Women</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Headphone for Women</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Powerbanks /Block-11 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Powerbanks
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Power Bank 10000mah</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Power Bank 20000mah</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Mobile Power Bank</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Fast Charging Power Bank</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Power Bank for iPhone</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by price
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Power Bank Under 1000</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Power Bank Under 1500</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Power Bank Under 2000</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Chargers /Block-12 -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Chargers
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Wireless Charger</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Type C Charger</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Fast Charger</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>USB Charger</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Micro USB Charger</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Type C Adapter</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Cables /Block-13 -->
+						<!-- <div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9"> -->
+						<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+							<p
+								class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+							>
+								Cables
+								<span
+									class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+									>+</span
+								>
+							</p>
+							<div class="flex-col hidden mb-2 sub-block md:flex">
+								<div class="flex flex-col mt-4">
+									<p class="sub-title text-sm font-medium text-[#1a2024] mb-1">
+										Shop by Features
+									</p>
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>C Type Cable</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Micro USB Cable</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Smartwatch Charging Cable</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>USB C to C Cable</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>C Type to Micro USB</a
+											>
+										</li>
+										<li class="w-full">
+											<a
+												href=""
+												class="text-xs text-[rgb(134, 140, 145)] font-normal"
+												>Lightning Cable</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ---footer aside section-- -->
+				<div
+					class="px-4 pt-10 pb-8 mt-10 footer-bottom-side header-smaller-tablet:px-10 md:pt-8"
+				>
+					<div class="wrapper">
+						<div class="social">
+							<p class="social-text text-base text-[#293036] text-center">
+								Let's get social
+							</p>
+							<ul class="flex mx-auto social-icons w-fit">
+								<li
+									class="flex items-center justify-center list-none w-11 h-11"
+								>
+									<i class="text-sm fa-brands fa-facebook-f"></i>
+								</li>
+								<li
+									class="flex items-center justify-center list-none w-11 h-11"
+								>
+									<i class="text-sm fa-brands fa-twitter"></i>
+								</li>
+								<li
+									class="flex items-center justify-center list-none w-11 h-11"
+								>
+									<i class="text-sm fa-brands fa-instagram"></i>
+								</li>
+								<li
+									class="flex items-center justify-center list-none w-11 h-11"
+								>
+									<i class="text-sm fa-brands fa-youtube"></i>
+								</li>
+								<li
+									class="flex items-center justify-center list-none w-11 h-11"
+								>
+									<i class="text-sm fa-brands fa-linkedin"></i>
+								</li>
+							</ul>
+						</div>
+						<p class="mt-2 mb-5 text-xs text-center privacy-policy">
+							<span class="relative mr-2 privacy">Privacy Policy</span>
+							<span> Terms & Condition</span>
+						</p>
+						<p class="copy text-[#a7afb7] text-xs w-full text-center">
+							© 2023 Imagine Marketing Limited. All Rights Reserved.
+							<br />
+							<br />
+							For queries contact us: Manager, Imagine Marketing Limited
+							<br class="only_mobile sm:hidden" />
+							Unit no. 204 &amp; 205, 2nd floor, D-wing &amp; E-wing,<br />Corporate
+							Avenue, Andheri Ghatkopar Link Road,
+							<br class="only_mobile sm:hidden" />
+							Mumbai, Maharashtra-400093, India
+						</p>
+					</div>
+				</div>
+			</footer>
+		</section>
+
+		<!-- Essential for the footer to work with fixed property -->
+		<div class="mt-24 md:hidden"></div>
+
+		<!-- Bottom Navbar for mobile -->
+		<div
+			class="fixed bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden z-10"
+		>
+			<div class="flex justify-evenly">
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
+					<span
+						class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold"
+						>Home
+						<span class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"></span>
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Deals
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img
+						class="h-7 w-7"
+						src="./assets/images/categories.svg"
+						alt="categories"
+					/>
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Categories
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Login
+					</span>
+				</div>
+				<div
+					class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+				>
+					<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
+					<span
+						class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+						>Chat
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Script for Slick carousel -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 		<script type="text/javascript" src="./slick/slick.min.js"></script>
 		<script>
@@ -210,8 +2383,64 @@
 					adaptiveHeight: true,
 					arrows: true,
 					dots: true,
+					responsive: [
+						{
+							breakpoint: 1000,
+							settings: {
+								arrows: false,
+							},
+						},
+					],
+				}),
+					$('.text-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						vertical: true,
+						arrows: false,
+						dots: false,
+						speed: 1500,
+					}),
+					$('.press-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						adaptiveHeight: true,
+						arrows: true,
+						dots: false,
+					}),
+					// function for the desktop category list
+					$('#categoryList, #categoryOption').hover(
+						function () {
+							$('#categoryList').show()
+						},
+						function () {
+							$('#categoryList').hide(1000)
+						}
+					)
+				$('#login').click(function () {
+					$('#loginCard').toggle('slow')
+				})
+				$('#closeCard').click(function () {
+					$('#loginCard').toggle('slow')
+				})
+				$('#menuButton').click(function () {
+					$('#menuCard').toggle('slow')
 				})
 			})
 		</script>
-</body>
+
+		<!-- --javaScript file-- -->
+		<script src="index.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$('.saurabhCarousel').slick({
+					slidesToShow: 1,
+					autoplay: true,
+					adaptiveHeight: true,
+					arrows: true,
+					dots: true,
+				})
+			})
+		</script>
+	</body>
 </html>
