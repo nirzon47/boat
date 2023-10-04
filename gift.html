@@ -1,0 +1,3826 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>boAt Gifts</title>
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.ico"
+			type="image/x-icon"
+		/>
+		<!-- ----Fontawesome icons kit----- -->
+		<script
+			src="https://kit.fontawesome.com/6604ef9bb8.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Tailwind Output CSS File -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="dist/output.css" />
+
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+		<!-- Custom CSS -->
+		<style>
+			html {
+				scroll-behavior: smooth;
+			}
+
+			.scrollbar-hide::-webkit-scrollbar {
+				display: none;
+			}
+
+			/* For IE, Edge and Firefox */
+			.scrollbar-hide {
+				-ms-overflow-style: none;
+				/* IE and Edge */
+				scrollbar-width: none;
+				/* Firefox */
+			}
+
+			#categoryList {
+				display: none;
+			}
+
+			#loginCard {
+				display: none;
+			}
+
+			#menuCard {
+				display: none;
+			}
+		</style>
+		<!-- custom style by saiful -->
+		<link rel="stylesheet" href="customStyleBySaiful.css" />
+	</head>
+	<body class="antialiased font-metropolis">
+		<!-- Entire Page content -->
+		<div class="w-screen h-screen overflow-x-hidden">
+			<!-- Announcement bar -->
+			<section
+				class="h-[38px] px-[20px] text-center flex items-center justify-center bg-announcement"
+			>
+				<a>
+					<p
+						class="text-[11px] md:text-xs px-[22px] py-2 font-medium leading-none"
+					>
+						Getting you the power of good sound. <b>boAtxMarvel</b> is Live.
+						Grab Now!
+					</p>
+				</a>
+			</section>
+
+			<!-- Top Navbar -->
+			<nav
+				class="sticky top-0 z-50 block bg-white header-smaller-tablet:h-[67px] md:h-32 xl:h-[84px] border-b"
+			>
+				<!-- Menu in mobile -->
+				<div
+					class="h-[calc(100vh-87px)] overflow-y-scroll bg-white p-4 w-[95%] top-[54px] absolute z-20"
+					id="menuCard"
+				>
+					<!-- Categories -->
+					<div class="p-4 border rounded-xl bg-[#f8f9fa]">
+						<div class="flex justify-between">
+							<h2 class="font-bold">Categories</h2>
+							<span class="font-bold text-[#8b8b8b]">—</span>
+						</div>
+						<div class="flex flex-wrap justify-between mt-8 gap-y-4">
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-1.webp"
+									alt="True Wireless Earbuds"
+								/>
+								<p class="text-xs text-center">True Wireless Earbuds</p>
+							</div>
+							<div class="w-[30%]">
+								<img src="./assets/images/category-d-2.webp" alt="Neckbands" />
+								<p class="text-xs text-center">Neckbands</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-3.webp"
+									alt="Smart Watches"
+								/>
+								<p class="text-xs text-center">Smart Watches</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-4.webp"
+									alt="Wireless Headphones"
+								/>
+								<p class="text-xs text-center">Wireless Headphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-5.webp"
+									alt="Wireless Speakers"
+								/>
+								<p class="text-xs text-center">Wireless Speakers</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-6.webp"
+									alt="Wired Headphones"
+								/>
+								<p class="text-xs text-center">Wired Headphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-7.webp"
+									alt="Wired Earphones"
+								/>
+								<p class="text-xs text-center">Wired Earphones</p>
+							</div>
+							<div class="w-[30%]">
+								<img src="./assets/images/category-d-8.webp" alt="Soundbars" />
+								<p class="text-xs text-center">Soundbars</p>
+							</div>
+							<div class="w-[30%]">
+								<img
+									src="./assets/images/category-d-9.webp"
+									alt="Gaming Headphones"
+								/>
+								<p class="text-xs text-center">Gaming Headphones</p>
+							</div>
+						</div>
+						<p
+							class="flex items-center justify-center gap-2 mt-6 font-bold text-center text-button-blue"
+						>
+							Expand More
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="14"
+								height="14"
+								viewBox="0 0 14 14"
+							>
+								<path
+									id="Path_337386"
+									data-name="Path 337386"
+									d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+									transform="translate(-1.155 11.307)"
+									fill="#2f5b96"
+								></path>
+							</svg>
+						</p>
+					</div>
+
+					<!-- Links -->
+					<div class="flex flex-col px-4 mt-6 gap-y-8">
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="deals.html"
+						>
+							<p>Daily Deals</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="gift.html"
+						>
+							<p>Gift with boAt</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="mailto:nirzonk47@gmail.com?subject=Feedback"
+						>
+							<p>Bulk Orders</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="blogs.html"
+						>
+							<p>Blogs</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+						<a
+							class="flex justify-between font-bold cursor-pointer"
+							href="index.html"
+						>
+							<p>Track your order</p>
+							<img class="w-[9px]" src="./assets/images/next.svg" alt="Next" />
+						</a>
+					</div>
+				</div>
+
+				<div class="flex flex-col items-center justify-center h-full">
+					<!-- Top Section -->
+					<div class="flex justify-between w-full px-3 py-4 mx-auto md:px-10">
+						<!-- Category hover menu -->
+						<ul
+							class="bg-white p-5 top-[84px] absolute w-[94%]"
+							id="categoryList"
+						>
+							<div class="flex flex-wrap mx-auto gap-y-2">
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-1.webp"
+										alt="True Wireless Earbuds"
+									/>
+									<p class="text-xs font-medium">True Wireless Earbuds</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-2.webp"
+										alt="Neckbands"
+									/>
+									<p class="text-xs font-medium">Neckbands</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-3.webp"
+										alt="Smartwatches"
+									/>
+									<p class="text-xs font-medium">Smartwatches</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-5.webp"
+										alt="Wireless Speakers"
+									/>
+									<p class="text-xs font-medium">Wireless Speakers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-6.webp"
+										alt="Wired Headphones"
+									/>
+									<p class="text-xs font-medium">Wired Headphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-7.webp"
+										alt="Wired Earphones"
+									/>
+									<p class="text-xs font-medium">Wired Earphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-8.webp"
+										alt="Soundbars"
+									/>
+									<p class="text-xs font-medium">Soundbars</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-9.webp"
+										alt="Gaming Headphones"
+									/>
+									<p class="text-xs font-medium">Gaming Headphones</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-10.webp"
+										alt="Party Speakers"
+									/>
+									<p class="text-xs font-medium">Party Speakers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-11.webp"
+										alt="Trimmers"
+									/>
+									<p class="text-xs font-medium">Trimmers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-12.webp"
+										alt="Chargers"
+									/>
+									<p class="text-xs font-medium">Chargers</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-13.webp"
+										alt="Power Banks"
+									/>
+									<p class="text-xs font-medium">Power Banks</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-14.webp"
+										alt="Cables"
+									/>
+									<p class="text-xs font-medium">Cables</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-15.webp"
+										alt="Car Accessories"
+									/>
+									<p class="text-xs font-medium">Car Accessories</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/superhero.webp"
+										alt="Superhero Collection"
+									/>
+									<p class="text-xs font-medium">Superhero Collection</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-16.webp"
+										alt="Trebel for Women"
+									/>
+									<p class="text-xs font-medium">Trebel for Women</p>
+								</li>
+								<!-- List item -->
+								<li class="flex items-center gap-x-1 w-[18vw] cursor-pointer">
+									<img
+										class="w-[50px] h-[50px]"
+										src="./assets/images/category-d-17.webp"
+										alt="Limited Editions"
+									/>
+									<p class="text-xs font-medium">Limited Editions</p>
+								</li>
+							</div>
+						</ul>
+						<!-- Left Section for mobile + tablet -->
+						<div class="flex gap-12">
+							<section class="flex items-center gap-5 w-[85px] xl:hidden">
+								<img
+									class="h-[14px] cursor-pointer"
+									id="menuButton"
+									src="./assets/images/hamburger-icon.png"
+									alt="burger menu icon"
+								/>
+								<a href="index.html" class="md:hidden">
+									<img
+										class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
+										src="./assets/images/logo.svg"
+										height="62"
+										width="151"
+										alt="boat logo"
+									/>
+								</a>
+							</section>
+
+							<!-- Links section -->
+							<section class="hidden xl:flex gap-x-7">
+								<!-- Categories -->
+								<a
+									href="#"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+									id="categoryOption"
+								>
+									<p>Categories</p>
+									<svg
+										style="rotate: 90deg !important"
+										focusable="false"
+										width="7"
+										height="10"
+										class="icon icon--dropdown-arrow-right icon--direction-aware"
+										viewBox="0 0 7 10"
+									>
+										<path
+											fill-rule="evenodd"
+											clip-rule="evenodd"
+											d="M3.9394 5L0.469727 1.53033L1.53039 0.469666L6.06072 5L1.53039 9.53032L0.469727 8.46967L3.9394 5Z"
+											fill="currentColor"
+										></path>
+									</svg>
+								</a>
+
+								<!-- Daily Deals -->
+								<a
+									href="./deals.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Daily Deals</p>
+								</a>
+
+								<!-- Gift with boAt -->
+								<a
+									href="./gift.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Gift with boAt</p>
+								</a>
+
+								<!-- Bulk Orders -->
+								<a
+									href="mailto:nirzonk47@gmail.com?subject=Feedback"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Bulk Orders</p>
+								</a>
+
+								<!-- Blogs -->
+								<a
+									href="blogs.html"
+									class="flex items-center duration-150 ease-in-out gap-x-2 hover:underline decoration-transparent underline-offset-4 hover:decoration-boat-red hover:font-bold decoration-2"
+								>
+									<p>Blogs</p>
+								</a>
+							</section>
+						</div>
+
+						<!-- Logo for tablet + -->
+						<section class="hidden md:inline-block xl:order-[-1]">
+							<a href="index.html">
+								<img
+									class="h-auto w-[60px] header-smaller-tablet:w-[85px]"
+									src="./assets/images/logo.svg"
+									height="62"
+									width="151"
+									alt="boat logo"
+								/>
+							</a>
+						</section>
+
+						<!-- Right Section -->
+						<section
+							class="flex items-center gap-5 w-[85px] justify-end xl:w-auto relative"
+						>
+							<div class="justify-center hidden w-full xl:flex">
+								<div class="relative">
+									<input
+										class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto outline-none"
+										type="text"
+									/>
+									<div
+										class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+									>
+										<p>Search <span class="font-bold">"Earphones"</span></p>
+										<p>Search <span class="font-bold">"Smartwatches"</span></p>
+										<p>Search <span class="font-bold">"Speakers"</span></p>
+									</div>
+								</div>
+							</div>
+							<img
+								class="w-5 h-5 cursor-pointer header-smaller-tablet:hidden"
+								src="./assets/images/search.webp"
+								alt="Search icon"
+							/>
+							<img
+								class="hidden header-smaller-tablet:block h-[22px] w-[22px] cursor-pointer"
+								src="./assets/images/profile.webp"
+								alt="User Profile"
+								id="login"
+							/>
+							<img
+								class="cursor-pointer"
+								src="./assets/images/bag.svg"
+								alt="Shopping bag"
+							/>
+							<!-- Login Card -->
+							<div
+								class="absolute p-[10px] bg-white border-2 xl:top-[3.5rem] text-boat-red xl:w-1/2 rounded md:w-[150%] md:top-[6rem] md:-left-[4rem] xl:left-[10rem]"
+								id="loginCard"
+							>
+								<div
+									class="font-bold text-[14px] w-full flex justify-between items-center"
+								>
+									<p>Hi boAtHead</p>
+									<span class="text-3xl cursor-pointer" id="closeCard">×</span>
+								</div>
+								<button
+									class="w-full text-white bg-boat-red font-bold text-[14px] py-[4px] mt-4"
+								>
+									Login
+								</button>
+							</div>
+						</section>
+					</div>
+					<!-- Search Bar -->
+					<div class="justify-center hidden w-full md:flex xl:hidden">
+						<div class="relative">
+							<input
+								class="leading-5 rounded-[32px] bg-search-in-header bg-[#f4f5f7] bg-no-repeat py-[11px] px-[35px] mx-auto min-w-[300px] pointer-events-auto"
+								type="text"
+							/>
+							<div
+								class="absolute text-carousel bottom-2 left-[40px] text-[15px] text-[#4e5358] pointer-events-none"
+							>
+								<p>Search <span class="font-bold">"Earphones"</span></p>
+								<p>Search <span class="font-bold">"Smartwatches"</span></p>
+								<p>Search <span class="font-bold">"Speakers"</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+			<!-- Banner -->
+			<div>
+				<img
+					class="object-contain cursor-pointer lg:hidden"
+					src="./assets/images/gift.jpg"
+					alt="Quiz Banner"
+				/>
+				<img
+					class="hidden cursor-pointer lg:block"
+					src="./assets/images/gift-web.webp"
+					alt="Quiz Banner"
+				/>
+			</div>
+
+			<!-- Body -->
+			<div>
+				<!-- Special Days -->
+				<div class="py-6 mb-[25px] px-4 header-smaller-tablet:px-10">
+					<div>
+						<!-- Heading--- -->
+						<div class="flex items-center justify-between">
+							<h3 class="mb-3 text-2xl font-medium">
+								For
+								<b> Special</b>
+								<span
+									>Da<span class="border-b-2 border-boat-red">ys</span></span
+								>
+							</h3>
+							<p
+								class="flex items-center gap-1 text-sm font-bold text-button-blue"
+							>
+								View All
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+								>
+									<path
+										id="Path_337386"
+										data-name="Path 337386"
+										d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+										transform="translate(-1.155 11.307)"
+										fill="#2f5b96"
+									></path>
+								</svg>
+							</p>
+						</div>
+
+						<!-- Tabs -->
+						<div class="mb-3 type-tabs">
+							<div
+								class="flex overflow-x-scroll wrapper flex-nowrap text-[#616467] gap-x-1"
+							>
+								<button
+									class="w-fit min-w-fit bg-[#ecf0f4] text-[#1a2024] text-xs lg:text-base font-semibold px-5 py-1 rounded-3xl cursor-pointer"
+								>
+									New Year
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Birthday
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Anniversary
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Wedding
+								</button>
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div
+							class="grid auto-cols-[72vw] overflow-x-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)] xl:justify-between xl:gap-4"
+						>
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>25 Hours Playback</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/special-1.webp"
+										alt="Rockerz 255 Neo"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Rockerz 255 Neo
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#000000] border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#450c8a] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#9c0707]"
+													></span>
+													<p class="text-[14px] text-[#4e5358]">+1</p>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,299
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹2,990</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>57% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.8</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div
+									class="relative p-8 bg-[#e3e3e3] rounded-tr-[10px] rounded-tl-[10px]"
+								>
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>BT Calling</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/special-2.webp"
+										alt="Storm Pro Call"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Storm Pro Call
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#262626] border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#db1313] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#2b2b2b]"
+													></span>
+													<p class="text-[14px] text-[#4e5358]">+1</p>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹4,499
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹9,799</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>54% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">5.0</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div
+									class="relative p-8 bg-[#e3e3e3] rounded-tr-[10px] rounded-tl-[10px]"
+								>
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>Limited Edition</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/special-3.webp"
+										alt="Airdopes 207"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Stone 190 DC Edition
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#0d599b] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#db1313]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,299
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹2,999</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>57% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.8</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>Health Monitoring</span
+									>
+									<span
+										class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+										>🚀 Bestseller</span
+									>
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/special-4.webp"
+										alt="Wave Lite"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Wave Lite
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#292929] border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#db1313] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#24249c]"
+													></span>
+													<p class="text-[14px] text-[#4e5358]">+1</p>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,799
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹6,990</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>74% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.9</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+						</div>
+					</div>
+				</div>
+
+				<!-- First Carousel -->
+				<div
+					class="flex px-4 overflow-x-scroll scrollbar-hide gap-x-4 lg:hidden header-smaller-tablet:px-10"
+				>
+					<img
+						class="w-11/12"
+						src="./assets/images/gift-c1-1.webp"
+						alt="Music"
+					/>
+					<img
+						class="w-11/12"
+						src="./assets/images/gift-c1-2.webp"
+						alt="Explore"
+					/>
+				</div>
+				<div
+					class="!hidden grid-cols-2 lg:grid gap-x-5 mb-[25px] px-4 header-smaller-tablet:px-10"
+				>
+					<img
+						class="w-full col-span-1"
+						src="./assets/images/gift-c1-web-1.webp"
+						alt="Music"
+					/>
+					<img
+						class="w-full col-span-1"
+						src="./assets/images/gift-c1-web-2.webp"
+						alt="Explore"
+					/>
+				</div>
+
+				<!-- For Friends and Family -->
+				<div class="py-6 mb-[25px] mt-4 px-4">
+					<div>
+						<!-- Heading--- -->
+						<div class="flex items-center justify-between">
+							<h3 class="mb-3 text-2xl font-medium">
+								For Friends &
+
+								<span class="font-bold"
+									>Fam<span class="border-b-2 border-boat-red">ily</span></span
+								>
+							</h3>
+							<p
+								class="flex items-center gap-1 text-sm font-bold text-button-blue"
+							>
+								View All
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+								>
+									<path
+										id="Path_337386"
+										data-name="Path 337386"
+										d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+										transform="translate(-1.155 11.307)"
+										fill="#2f5b96"
+									></path>
+								</svg>
+							</p>
+						</div>
+
+						<!-- Tabs -->
+						<div class="mb-3 type-tabs">
+							<div
+								class="flex overflow-x-scroll wrapper flex-nowrap text-[#616467] gap-x-1"
+							>
+								<button
+									class="w-fit min-w-fit bg-[#ecf0f4] text-[#1a2024] text-xs lg:text-base font-semibold px-5 py-1 rounded-3xl cursor-pointer"
+								>
+									Parents
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Siblings
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Friends
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Beloved
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Colleagues
+								</button>
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div
+							class="grid auto-cols-[72vw] overflow-x-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)] xl:justify-between xl:gap-4"
+						>
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>Gaming Earbuds</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/fff-1.webp"
+										alt="Immortal 171"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Immortal 171
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-white rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,299
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹3,499</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>63% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">5.0</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>50 Hours Playback</span
+									>
+									<span
+										class="flex items-center justify-center text-white bg-black tracking-[-0.4px] absolute top-[10px] left-0 text-[10px] pt-1 pr-2 pb-[5px] pl-[3px] rounded-br-[5px] rounded-tr-[5px] font-bold max-w-max"
+										>₹200 OFF ON BIG200</span
+									>
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/fff-2.webp"
+										alt="Airdopes Atom 81"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Airdopes Atom 81
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#f8faf7] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#9fa6a6]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,099
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹3,490</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>69% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">5.0</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>50 Hours Playback</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/fff-3.webp"
+										alt="Airdopes 161 Pro"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Airdopes 161 Pro
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#424761] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#59645b]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹999
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹4,990</span
+													>
+
+													<span class="text-[10px] text-discount font-bold"
+														>80% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">5.0</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div
+									class="relative p-8 bg-[#e3e3e3] rounded-tr-[10px] rounded-tl-[10px]"
+								>
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>50 Hours Playback</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/fff-4.webp"
+										alt="Airdopes 207"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Airdopes 207
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-white rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#13183c]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,499
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹4,990</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>70% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.4</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+						</div>
+					</div>
+				</div>
+
+				<!-- Banner 1 -->
+				<div class="my-[25px]">
+					<img
+						class="lg:hidden"
+						src="./assets/images/banner-1.webp"
+						alt="banner"
+					/>
+					<img
+						class="hidden lg:block"
+						src="./assets/images/banner-1-web.webp"
+						alt="banner"
+					/>
+				</div>
+
+				<!-- Features -->
+				<div
+					class="flex justify-center gap-2 px-4 category:gap-4 md:gap-8 lg:gap-32 header-smaller-tablet:px-10"
+				>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-1.svg"
+								alt="Made"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							Made by<br />
+							<b>Indians</b>
+						</p>
+					</div>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-2.svg"
+								alt="Offers"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							Exciting<br />
+							<b>Offers</b>
+						</p>
+					</div>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-3.svg"
+								alt="Delivery"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							Fast<br />
+							<b>Delivery</b>
+						</p>
+					</div>
+					<div class="grid items-center justify-center">
+						<div>
+							<img
+								class="w-[112px]"
+								src="./assets/images/feature-4.svg"
+								alt="Benefits"
+							/>
+						</div>
+						<p
+							class="text-xs text-center leading-[14px] md:text-[18px] md:leading-[27px]"
+						>
+							Exclusive<br />
+							<b>Benefits</b>
+						</p>
+					</div>
+				</div>
+
+				<!-- Gift Card -->
+				<div class="px-4 header-smaller-tablet:px-10 mb-[25px] mt-10">
+					<!-- Heading -->
+					<div class="flex items-center justify-between">
+						<h3 class="mb-3 text-2xl font-medium">
+							Send them a
+							<span class="font-bold"
+								>Gift Ca<span class="border-b-2 border-boat-red">rd</span></span
+							>
+						</h3>
+					</div>
+
+					<div class="flex -ml-8 overflow-x-scroll">
+						<img
+							class="w-11/12"
+							src="./assets/images/gc-1.webp"
+							alt="A lot of money to gift to someone"
+						/>
+						<img
+							class="w-11/12"
+							src="./assets/images/gc-2.webp"
+							alt="Maybe I am just poor"
+						/>
+						<img
+							class="w-11/12"
+							src="./assets/images/gc-3.webp"
+							alt="I might need donations"
+						/>
+						<img
+							class="w-11/12"
+							src="./assets/images/gc-4.webp"
+							alt="500 INR"
+						/>
+					</div>
+				</div>
+
+				<!-- Passion -->
+				<div class="px-4 header-smaller-tablet:px-10 my-[25px]">
+					<div>
+						<!-- Heading--- -->
+						<div class="flex items-center justify-between">
+							<h3 class="mb-3 text-2xl font-medium">
+								By
+								<span class="font-bold"
+									>Passi<span class="border-b-2 border-boat-red">on</span></span
+								>
+							</h3>
+							<p
+								class="flex items-center gap-1 text-sm font-bold text-button-blue"
+							>
+								View All
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="14"
+									height="14"
+									viewBox="0 0 14 14"
+								>
+									<path
+										id="Path_337386"
+										data-name="Path 337386"
+										d="M8.159,2.693a6.7,6.7,0,0,0,2.7-.551A7.172,7.172,0,0,0,13.095.625,7.133,7.133,0,0,0,14.608-1.6a6.735,6.735,0,0,0,.548-2.706,6.7,6.7,0,0,0-.551-2.7A7.216,7.216,0,0,0,13.087-9.25a7.041,7.041,0,0,0-2.234-1.513,6.781,6.781,0,0,0-2.7-.544,6.755,6.755,0,0,0-2.7.544A7.1,7.1,0,0,0,3.22-9.25,7.134,7.134,0,0,0,1.7-7.012a6.742,6.742,0,0,0-.548,2.7A6.7,6.7,0,0,0,1.706-1.6,7.184,7.184,0,0,0,3.223.625a7.184,7.184,0,0,0,2.23,1.517A6.7,6.7,0,0,0,8.159,2.693Zm0-1.283A5.609,5.609,0,0,1,5.932.968,5.741,5.741,0,0,1,4.109-.261,5.692,5.692,0,0,1,2.885-2.084a5.648,5.648,0,0,1-.44-2.226,5.648,5.648,0,0,1,.44-2.226A5.692,5.692,0,0,1,4.109-8.36,5.7,5.7,0,0,1,5.929-9.585a5.622,5.622,0,0,1,2.223-.44,5.675,5.675,0,0,1,2.23.44A5.681,5.681,0,0,1,12.208-8.36a5.692,5.692,0,0,1,1.225,1.823,5.648,5.648,0,0,1,.44,2.226,5.648,5.648,0,0,1-.44,2.226A5.692,5.692,0,0,1,12.208-.261,5.741,5.741,0,0,1,10.385.968,5.609,5.609,0,0,1,8.159,1.411Zm3.5-5.735a.637.637,0,0,0-.209-.44l-2.306-2.3a.541.541,0,0,0-.389-.144.5.5,0,0,0-.371.151.507.507,0,0,0-.148.367.526.526,0,0,0,.166.4l.843.821.793.648L8.62-4.887H5.183a.528.528,0,0,0-.4.162.557.557,0,0,0-.155.4.553.553,0,0,0,.155.4.535.535,0,0,0,.4.159H8.62l1.419-.058-.793.656L8.4-2.35a.5.5,0,0,0-.166.389.528.528,0,0,0,.148.378.491.491,0,0,0,.371.155.529.529,0,0,0,.389-.159l2.306-2.291A.627.627,0,0,0,11.661-4.325Z"
+										transform="translate(-1.155 11.307)"
+										fill="#2f5b96"
+									></path>
+								</svg>
+							</p>
+						</div>
+
+						<!-- Tabs -->
+						<div class="mb-3 type-tabs">
+							<div
+								class="flex overflow-x-scroll wrapper flex-nowrap text-[#616467] gap-x-1"
+							>
+								<button
+									class="w-fit min-w-fit bg-[#ecf0f4] text-[#1a2024] text-xs lg:text-base font-semibold px-5 py-1 rounded-3xl cursor-pointer"
+								>
+									Audiophiles
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Gamers
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Workaholics
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Artists
+								</button>
+								<button
+									class="px-5 py-1 text-xs font-normal cursor-pointer w-fit min-w-fit lg:text-base rounded-3xl hover:bg-[#ecf0f4] duration-150"
+								>
+									Fitness Fanatic
+								</button>
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div
+							class="grid auto-cols-[72vw] overflow-x-scroll scrollbar-hide grid-flow-col gap-3 header-smaller-tablet:gap-8 -pr-4 md:auto-cols-[35vw] lg:auto-cols-[calc(25%-18px)] xl:justify-between xl:gap-4"
+						>
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div
+									class="relative p-4 rounded-tl-[10px] rounded-tr-[10px] bg-[#e3e3e3]"
+								>
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>65 Hours Playback</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/passion-1.webp"
+										alt="Nirvanaa 751 ANC"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Nirvanaa 751 ANC
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#adacac] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#808080] border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#24249c] border rounded-full border-card-span-border"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹3,999
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹7,990</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>50% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.7</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>Noise Cancellation</span
+									>
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/passion-2.webp"
+										alt="Airdopes 411 ANC"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Airdopes 411 ANC
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#161616] border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#918d8c] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#24249c]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹2,499
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹4,490</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>50% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.8</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div
+									class="relative p-4 rounded-tl-[10px] rounded-tr-[10px] bg-[#e3e3e3]"
+								>
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>10 Hours Playback</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/passion-3.webp"
+										alt="Stone 1000v2"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Stone 1000v2
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#24249c] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#41924B]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹2,999
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹6,990</span
+													>
+
+													<span class="text-[10px] text-discount font-bold"
+														>57% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.9</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+
+							<!-- Card -->
+							<div class="rounded-[10px]">
+								<!-- Image -->
+								<div class="relative">
+									<span
+										class="absolute left-[15%] -bottom-3 border border-white bg-card-yellow text-xs font-bold flex items-center px-[10px] py-[6px] max-w-[70%] w-[96%] justify-center rounded-[10px]"
+										>Noise Cancellation</span
+									>
+
+									<img
+										class="h-full w-full aspect-square object-cover rounded-tl-[10px] rounded-tr-[10px]"
+										src="./assets/images/passion-4.webp"
+										alt="Rockerz 330 ANC"
+									/>
+								</div>
+								<!-- Text -->
+								<div
+									class="border bg-card-sub border-card-sub-border px-3 py-[10px] rounded-br-[10px] rounded-bl-[10px]"
+								>
+									<div class="mt-2">
+										<div class="flex items-center justify-between">
+											<h4 class="text-sm font-bold tracking-[-0.56px]">
+												Rockerz 330 ANC
+											</h4>
+											<div class="flex items-center gap-1">
+												<div class="flex items-center">
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-black border rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 bg-[#0a3fa8] rounded-full border-card-span-border"
+													></span>
+													<span
+														class="inline-block w-5 h-5 -ml-2 border rounded-full border-card-span-border bg-[#7b7b7b]"
+													></span>
+												</div>
+											</div>
+										</div>
+										<div class="flex justify-between pt-2">
+											<div>
+												<div class="flex items-center">
+													<h4 class="mr-1 font-bold tracking-[-0.64px]">
+														₹1,699
+													</h4>
+													<span
+														class="mr-1 text-xs line-through text-og-price tracking-[-0.48px]"
+														>₹5,999</span
+													>
+													<span class="text-[10px] text-discount font-bold"
+														>72% off</span
+													>
+												</div>
+												<div class="flex items-end gap-1">
+													<svg
+														class="w-4 h-4"
+														xmlns="http://www.w3.org/2000/svg"
+														width="12"
+														height="12"
+														viewBox="0 0 22 22"
+													>
+														<g
+															id="Group_334346"
+															data-name="Group 334346"
+															transform="translate(17150 -5434)"
+														>
+															<rect
+																id="Rectangle_114376"
+																data-name="Rectangle 114376"
+																width="22"
+																height="22"
+																transform="translate(-17150 5434)"
+																fill="transparent"
+															></rect>
+															<g
+																id="Group_334341"
+																data-name="Group 334341"
+																transform="translate(-17149 5435)"
+															>
+																<path
+																	id="Path_332351"
+																	data-name="Path 332351"
+																	d="M1153.144,361.362a1.527,1.527,0,0,1,2.738,0l2.313,4.692,5.154.768a1.527,1.527,0,0,1,.848,2.6l-3.729,3.683.868,5.179a1.526,1.526,0,0,1-2.216,1.6l-4.606-2.424-4.607,2.424a1.526,1.526,0,0,1-2.216-1.6l.868-5.179-3.729-3.683a1.526,1.526,0,0,1,.848-2.6l5.154-.768Z"
+																	transform="translate(-1144.374 -360.511)"
+																	fill="#f4c730"
+																	fill-rule="evenodd"
+																></path>
+															</g>
+														</g>
+													</svg>
+													<p class="text-xs">4.8</p>
+												</div>
+											</div>
+											<button
+												class="font-medium text-white border bg-cart border-cart text-[14px] rounded-[10px] h-10 w-[108px]"
+											>
+												Add to Cart
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End of Card -->
+						</div>
+
+						<!-- Banner -->
+						<div class="my-[25px] !hidden lg:grid grid-cols-2 gap-x-4">
+							<img
+								class="w-full col-span-1"
+								src="./assets/images/gift-c2-1.webp"
+								alt="banner"
+							/>
+							<img
+								class="w-full col-span-1"
+								src="./assets/images/gift-c2-2.webp"
+								alt="banner"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<footer class="mx-4 footer">
+					<!-- ---footer first section  ----  -->
+					<div
+						class="footer-item-list bg-[#eff4f7] py-6 px-4 header-smaller-tablet:px-10 md:pt-8 items-start flex flex-wrap lg:justify-between"
+					>
+						<!-- --first column--- -->
+						<div class="w-full lg:w-[30%]">
+							<!-- logo -->
+							<div class="logo max-w-[150px] mx-auto w-full lg:mx-0 mb-4">
+								<a href="" class="">
+									<img
+										src="https://www.boat-lifestyle.com/cdn/shop/files/boAt_logo_small_3067da8c-a83b-46dd-b28b-6ef1e16ccd17_small.svg?v=1693549434"
+										alt="logo"
+										srcset=""
+									/>
+								</a>
+							</div>
+							<p
+								class="text[#293036] font-semibold text-2xl text-center lg:text-left mb-1"
+							>
+								Subscribe to our email alerts!
+							</p>
+							<div
+								class="input-box h-12 bg-white border border-[#e1e6eb] flex items-center justify-between rounded-xl"
+							>
+								<input
+									type="text"
+									class="w-11/12 px-3 text-sm outline-none lg:w-10/12"
+									placeholder="Enter you email address"
+								/>
+								<button class="flex items-center justify-center w-1/12">
+									<span
+										class="w-5 h-5 rounded-full border border-[#929ba2] flex justify-center items-center"
+									>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="9.27"
+											height="10"
+											class="h-2.5 align-middle"
+											viewBox="0 0 8.27 14.473"
+										>
+											<path
+												id="Path_340747"
+												data-name="Path 340747"
+												d="M.28.277a.961.961,0,0,1,1.349,0L7.991,6.569a.936.936,0,0,1,0,1.334L1.628,14.2a.961.961,0,0,1-1.349,0,.935.935,0,0,1,0-1.334L5.966,7.237.28,1.611A.935.935,0,0,1,.28.277Z"
+												fill="#868c91"
+												fill-rule="evenodd"
+											></path>
+										</svg>
+									</span>
+								</button>
+							</div>
+						</div>
+						<!-- right columns only for large or above screens--- -->
+						<div
+							class="box-border items-start justify-between w-8/12 mt-6 first-right-columns md:w-full lg:w-7/12 lg:mt-0 md:flex lg:pl-5"
+						>
+							<!-- right first column--- -->
+							<div class="footer__item w-3/12 md:w-4/12 xl:w-[30%]">
+								<p class="mb-3 text-sm font-semibold desktop_menu_link">Shop</p>
+
+								<div class="hidden footer__item-content md:block">
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">True Wireless Earbuds</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Wire Headphones</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Wired Headphones</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Wireless Speakers</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Home Audio</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Mobile Accessories</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Smart Watches</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">TRebel</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Misfit</a>
+										</li>
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Gift Card</a>
+										</li>
+
+										<li class="pt-2.5 w-[45%]">
+											<a href="" class="text-xs">Earn ₹100</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- right second column--- -->
+							<div class="footer__item w-3/12 xl:w-[30%]">
+								<p class="mb-3 text-sm font-semibold desktop_menu_link">Help</p>
+
+								<div class="hidden footer__item-content md:block">
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Track Your Orders</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Warranty & Supports</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Return Policy</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Service Centers</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Bulk Orders</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">FAQs</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Why Buy Direct</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- right third column--- -->
+							<div class="footer__item w-3/12 xl:w-[30%]">
+								<p class="mb-3 text-sm font-semibold desktop_menu_link">
+									Company
+								</p>
+
+								<div class="hidden footer__item-content md:block">
+									<ul
+										class="flex flex-wrap justify-between leading-4 list-none linklist"
+									>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">About boAt</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">News</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Read Our Blog</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Careers</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Security</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Investor Relations</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Social Responsibility</a>
+										</li>
+										<li class="pt-2.5 w-full">
+											<a href="" class="text-xs">Warranty Policy</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- ---footer additional block section-- -->
+					<div
+						class="footer-additional-block bg-[#f7fafc] pt-10 px-4 header-smaller-tablet:px-10 md:pt-8"
+					>
+						<div class="wrapper w-full max-h-[1200px] flex flex-col flex-wrap">
+							<!-- True wireless Earbuds /Block-1 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									True Wireless Earbuds
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Noise Cancellation Earbuds</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Gaming Earbuds</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Large Playback Earbuds</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds Under 2000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds Under 3000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds Under 4000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds Under 5000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds Above 5000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- wireless Earphones /Block-2 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Wireless Earphones
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Noise Cancellation Earphones</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Gaming Earphones</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Large Playback Earphones</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 2000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 3000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 4000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 5000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Above 5000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Wired Earphones /Block-3 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Wired Earphones
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Noise Cancellation Earphones</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 500</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphones Under 1000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Wireless Headphones /Block-4 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Wireless Headphones
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Noise Cancellation Earphones</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Gaming Earphones</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Long Playback Earphones</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Headphones Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Headphones Under 2000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Headphones Under 3000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Headphones Under 4000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Headphones Above 4000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Wired Headphones /Block-5 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Wired Headphones
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wired Headphones with Mic</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Headphones with Mic for PC</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wired Headphones Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wired Headphones Under 2000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wired Headphones Under 3000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Gaming Headphones /Block-6 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Gaming Headphones
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Gaming Headphones with Mic</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Low Latency Headphones</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>RGB Light Headphones</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Headphones for PC Gaming</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Wireless Speakers /Block-7 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Wireless Speakers
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Portable Speakers</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Long Playback Speakers</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Waterproof Bluetooth Speakers</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Party Speakers with RGB Lights</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Speakers with Karaoke Mic</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Speakers Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Speakers Under 2000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Speakers Under 3000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Speakers Under 5000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Speakers Under 8000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Soundbars /Block-8 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Soundbars
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Dolby Soundbars</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar with Wireless Subwoofer</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar with Wired Subwoofer</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Alexa Enabled Soundbar</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Soundbar</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar Under 10000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar Under 20000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar Under 3000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar Under 5000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Soundbar Above 20000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Smart Watches /Block-8 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Smart Watches
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Bluetooth Calling Smartwatches</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>AMOLED Display Smartwatch</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Round Dial Smartwatch</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Fitness Tracker Smartwatch</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Sports Tracker Smartwatch</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Big Display Smartwatch</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Under 2000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Under 3000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Under 4000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Under 5000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Above 5000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Trimmers /Block-9 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Trimmers
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Grooming Kit for Men</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Beard Styler</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Trimmer for Men</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Trimmer Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Trimmer Under 2000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Limited Editions /Block-9 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Limited Editions
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Limited Edition Speakers</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Limited Edition Earbuds</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Limited Edition Smartwatch</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Limited Edition Earphone</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Limited Edition Headphones</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Car Accessories /Block-9 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Car Accessories
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Car Charger</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Aux Cable for Car</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Car Charger Under 500</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Car Charger Above 500</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Trebel Range /Block-10 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Trebel Range
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch for Women</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earbuds for Women</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Neckband for Women</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Earphone for Women</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Headphone for Women</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Powerbanks /Block-11 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Powerbanks
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Power Bank 10000mah</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Power Bank 20000mah</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Mobile Power Bank</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Fast Charging Power Bank</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Power Bank for iPhone</a
+												>
+											</li>
+										</ul>
+									</div>
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by price
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Power Bank Under 1000</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Power Bank Under 1500</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Power Bank Under 2000</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Chargers /Block-12 -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Chargers
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Wireless Charger</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Type C Charger</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Fast Charger</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>USB Charger</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Micro USB Charger</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Type C Adapter</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Cables /Block-13 -->
+							<!-- <div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9"> -->
+							<div class="footer-collection-block md:w-[23%] lg:w-1/4 lg:pb-9">
+								<p
+									class="flex items-center justify-between pb-2 mb-4 text-sm font-semibold text-black footer-collection-title lg:text-base md:font-bold md:mb-0 lg:mb-2"
+								>
+									Cables
+									<span
+										class="text-xl text-black transition-all ease-in delay-300 expand-collection-icon md:hidden"
+										>+</span
+									>
+								</p>
+								<div class="flex-col hidden mb-2 sub-block md:flex">
+									<div class="flex flex-col mt-4">
+										<p
+											class="sub-title text-sm font-medium text-[#1a2024] mb-1"
+										>
+											Shop by Features
+										</p>
+										<ul
+											class="flex flex-wrap justify-between leading-4 list-none linklist"
+										>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>C Type Cable</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Micro USB Cable</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Smartwatch Charging Cable</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>USB C to C Cable</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>C Type to Micro USB</a
+												>
+											</li>
+											<li class="w-full">
+												<a
+													href=""
+													class="text-xs text-[rgb(134, 140, 145)] font-normal"
+													>Lightning Cable</a
+												>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---footer aside section-- -->
+					<div
+						class="px-4 pt-10 pb-8 mt-10 footer-bottom-side header-smaller-tablet:px-10 md:pt-8"
+					>
+						<div class="wrapper">
+							<div class="social">
+								<p class="social-text text-base text-[#293036] text-center">
+									Let's get social
+								</p>
+								<ul class="flex mx-auto social-icons w-fit">
+									<li
+										class="flex items-center justify-center list-none w-11 h-11"
+									>
+										<i class="text-sm fa-brands fa-facebook-f"></i>
+									</li>
+									<li
+										class="flex items-center justify-center list-none w-11 h-11"
+									>
+										<i class="text-sm fa-brands fa-twitter"></i>
+									</li>
+									<li
+										class="flex items-center justify-center list-none w-11 h-11"
+									>
+										<i class="text-sm fa-brands fa-instagram"></i>
+									</li>
+									<li
+										class="flex items-center justify-center list-none w-11 h-11"
+									>
+										<i class="text-sm fa-brands fa-youtube"></i>
+									</li>
+									<li
+										class="flex items-center justify-center list-none w-11 h-11"
+									>
+										<i class="text-sm fa-brands fa-linkedin"></i>
+									</li>
+								</ul>
+							</div>
+							<p class="mt-2 mb-5 text-xs text-center privacy-policy">
+								<span class="relative mr-2 privacy">Privacy Policy</span>
+								<span> Terms & Condition</span>
+							</p>
+							<p class="copy text-[#a7afb7] text-xs w-full text-center">
+								© 2023 Imagine Marketing Limited. All Rights Reserved.
+								<br />
+								<br />
+								For queries contact us: Manager, Imagine Marketing Limited
+								<br class="only_mobile sm:hidden" />
+								Unit no. 204 &amp; 205, 2nd floor, D-wing &amp; E-wing,<br />Corporate
+								Avenue, Andheri Ghatkopar Link Road,
+								<br class="only_mobile sm:hidden" />
+								Mumbai, Maharashtra-400093, India
+							</p>
+						</div>
+					</div>
+				</footer>
+				<!-- Essential for the footer to work with fixed property -->
+				<div class="mt-24 md:hidden"></div>
+			</div>
+			<!-- Bottom Navbar for mobile -->
+			<div
+				class="fixed bottom-0 w-full p-[10px] bg-white shadow tracking-[-0.4px] text-bottom-nav-black header-smaller-tablet:hidden z-10"
+			>
+				<div class="flex justify-evenly">
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/home.svg" alt="home" />
+						<span
+							class="text-[10px] flex flex-col items-center justify-center mt-1 font-bold"
+							>Home
+							<span
+								class="inline-block bg-boat-red h-[2px] w-6 mt-[-2px]"
+							></span>
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/deals.svg" alt="deals" />
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Deals
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img
+							class="h-7 w-7"
+							src="./assets/images/categories.svg"
+							alt="categories"
+						/>
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Categories
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/login.svg" alt="login" />
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Login
+						</span>
+					</div>
+					<div
+						class="flex flex-col items-center justify-between w-[59px] h-[47px]"
+					>
+						<img class="h-7 w-7" src="./assets/images/chat.svg" alt="chat" />
+						<span
+							class="text-[10px] font-medium flex flex-col items-center justify-center mt-1"
+							>Chat
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Scripts -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script type="text/javascript" src="./slick/slick.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('.carousel').slick({
+					slidesToShow: 1,
+					autoplay: true,
+					adaptiveHeight: true,
+					arrows: true,
+					dots: true,
+					responsive: [
+						{
+							breakpoint: 1000,
+							settings: {
+								arrows: false,
+							},
+						},
+					],
+				}),
+					$('.text-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						vertical: true,
+						arrows: false,
+						dots: false,
+						speed: 1500,
+					}),
+					$('.press-carousel').slick({
+						slidesToShow: 1,
+						autoplay: true,
+						adaptiveHeight: true,
+						arrows: true,
+						dots: false,
+					}),
+					// function for the desktop category list
+					$('#categoryList, #categoryOption').hover(
+						function () {
+							$('#categoryList').show()
+						},
+						function () {
+							$('#categoryList').hide(1000)
+						}
+					)
+				$('#login').click(function () {
+					$('#loginCard').toggle('slow')
+				})
+				$('#closeCard').click(function () {
+					$('#loginCard').toggle('slow')
+				})
+				$('#menuButton').click(function () {
+					$('#menuCard').toggle('slow')
+				})
+			})
+		</script>
+
+		<script src="index.js"></script>
+	</body>
+</html>
