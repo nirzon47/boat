@@ -15,6 +15,7 @@ The screenshots take a lot of space. Click on the links to navigate easily
     - [Tailwind Custom Plugins](#tailwind-custom-plugins)
     - [Building / package.json scripts](#building--packagejson-scripts)
     - [Contributors](#contributors)
+    - [Challenges Faced](#challenges-faced)
 
 ### Features
 
@@ -23,6 +24,9 @@ The screenshots take a lot of space. Click on the links to navigate easily
 - High quality carousels
 - Auto-playing videos to catch attention even in desktop version
 - Interactive footer and menu buttons
+- Made with TailwindCSS
+- Extra touches to give more life to the webpages compared to the original
+- Proper semantic tags used for accessibility
 
 ### Screenshots
 
@@ -97,6 +101,17 @@ which is defined in the `package,json` to run
 - Saiful Islam
 - Juber
 - Saurabh Shrikhande
+
+### Challenges Faced
+
+- Merge Conflicts
+- Advanced git concepts
+- Proper way of doing simulating on click events using jQuery
+- Implementing carousel
+- Collapsible footer elements
+- Extra effects like scaling and transitions in TailwindCSS
+- TailwindCSS CLI use for optimized production
+- Collaboration using Git
 
 ---
 
